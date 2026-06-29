@@ -1,0 +1,3383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Damak IT Centre | Computer Repair, CCTV &amp; Networking – Damak, Jhapa</title>
+    <meta name="description" content="Damak IT Centre – Expert computer repair, laptop repair, PC &amp; accessories, CCTV installation, and networking solutions in Damak-5, Jhapa, Nepal. Call 986-3617278." />
+    <meta name="keywords" content="Damak IT Centre, IT service Damak, computer repair Damak, laptop repair Jhapa, CCTV installation Damak, networking Jhapa, PC accessories Damak, IT support Nepal" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Damak IT Centre | Computer &amp; IT Solutions in Damak, Jhapa" />
+    <meta property="og:description" content="Complete IT solutions: Computer repair, laptop service, CCTV, networking in Damak, Nepal." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="logo.jpeg" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%231a2a5e'/><text y='72' x='50' text-anchor='middle' font-size='60' font-family='Arial' font-weight='bold' fill='white'>D</text></svg>" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <!-- Cloudinary Upload Widget -->
+    <script src="https://upload-widget.cloudinary.com/global/all.js" type="text/javascript"></script>
+    <style>
+        /* ── RESET & ROOT ── */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        :root {
+            --navy: #0d1a3a;
+            --dark-blue: #0f2047;
+            --blue: #1e4b8a;
+            --light-blue: #2563eb;
+            --bright-blue: #3b82f6;
+            --cyan: #60a5fa;
+            --grey-white: #f0f4ff;
+            --light-grey: #f1f5f9;
+            --soft-grey: #e2eaff;
+            --white: #ffffff;
+            --grey: #6b7280;
+            --text: #1e293b;
+            --shadow: 0 8px 32px rgba(13, 26, 58, 0.15);
+            --radius: 14px;
+            --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --section-border: 3px solid rgba(200, 210, 230, 0.5);
+            --section-bg: rgba(255, 255, 255, 0.92);
+        }
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text);
+            background: #eef2f7;
+            overflow-x: hidden;
+            min-height: 100vh;
+            /* ── CUBE PATTERN BACKGROUND ── */
+            background-image:
+                linear-gradient(45deg, rgba(37, 99, 235, 0.04) 0%, rgba(37, 99, 235, 0.02) 100%),
+                repeating-linear-gradient(45deg,
+                    rgba(37, 99, 235, 0.06) 0px,
+                    rgba(37, 99, 235, 0.06) 2px,
+                    transparent 2px,
+                    transparent 8px),
+                repeating-linear-gradient(-45deg,
+                    rgba(37, 99, 235, 0.06) 0px,
+                    rgba(37, 99, 235, 0.06) 2px,
+                    transparent 2px,
+                    transparent 8px);
+            background-size: 100% 100%, 16px 16px, 16px 16px;
+            background-attachment: fixed;
+        }
+
+        /* ── CUBE PATTERN OVERLAY ── */
+        .cube-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 0;
+            pointer-events: none;
+            background-image:
+                repeating-linear-gradient(45deg,
+                    rgba(59, 130, 246, 0.04) 0px,
+                    rgba(59, 130, 246, 0.04) 1px,
+                    transparent 1px,
+                    transparent 12px),
+                repeating-linear-gradient(-45deg,
+                    rgba(59, 130, 246, 0.04) 0px,
+                    rgba(59, 130, 246, 0.04) 1px,
+                    transparent 1px,
+                    transparent 12px);
+            background-size: 100% 100%, 24px 24px, 24px 24px;
+            opacity: 0.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        ul {
+            list-style: none;
+        }
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .container {
+            width: 92%;
+            max-width: 1180px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* ── SECTION OUTER FRAME ── */
+        .section-frame {
+            background: var(--section-bg);
+            border: var(--section-border);
+            border-radius: 20px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+            backdrop-filter: blur(2px);
+            position: relative;
+            z-index: 1;
+            transition: border-color 0.3s ease;
+        }
+        .section-frame:hover {
+            border-color: rgba(37, 99, 235, 0.25);
+        }
+        .section-frame .section-inner {
+            position: relative;
+            z-index: 1;
+        }
+
+        .section-label {
+            display: inline-block;
+            font-size: .78rem;
+            font-weight: 700;
+            letter-spacing: .15em;
+            text-transform: uppercase;
+            color: var(--bright-blue);
+            margin-bottom: .5rem;
+        }
+        .section-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+            font-weight: 800;
+            color: var(--navy);
+            line-height: 1.2;
+        }
+        .section-title span {
+            color: var(--light-blue);
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: .5rem;
+            padding: .75rem 1.75rem;
+            border-radius: 50px;
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 600;
+            font-size: .95rem;
+            transition: var(--transition);
+            cursor: pointer;
+            border: none;
+        }
+        .btn-primary {
+            background: var(--light-blue);
+            color: var(--white);
+            box-shadow: 0 4px 20px rgba(37, 99, 235, .35);
+        }
+        .btn-primary:hover {
+            background: var(--navy);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 28px rgba(37, 99, 235, .45);
+        }
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--white);
+            color: var(--white);
+        }
+        .btn-outline:hover {
+            background: var(--white);
+            color: var(--navy);
+        }
+        .btn-danger {
+            background: #dc2626;
+            color: var(--white);
+        }
+        .btn-danger:hover {
+            background: #b91c1c;
+            transform: translateY(-2px);
+        }
+        .btn-success {
+            background: #16a34a;
+            color: var(--white);
+        }
+        .btn-success:hover {
+            background: #15803d;
+            transform: translateY(-2px);
+        }
+        .btn-secondary {
+            background: var(--grey-white);
+            color: var(--navy);
+            border: 1.5px solid var(--soft-grey);
+        }
+        .btn-secondary:hover {
+            background: var(--soft-grey);
+            transform: translateY(-2px);
+        }
+
+        /* ── NAVBAR ── */
+        #navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 1rem 0;
+            transition: var(--transition);
+            background: transparent;
+        }
+        #navbar.scrolled {
+            background: rgba(13, 26, 58, .97);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 2px 24px rgba(0, 0, 0, .25);
+            padding: .6rem 0;
+        }
+        .nav-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: .7rem;
+            flex-shrink: 0;
+        }
+        .nav-logo .logo-icon {
+            width: 44px;
+            height: 44px;
+            background: var(--white);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            flex-shrink: 0;
+            border: 2px solid rgba(255, 255, 255, 0.15);
+        }
+        .nav-logo .logo-icon img {
+            width: 38px;
+            height: 38px;
+            object-fit: contain;
+        }
+        .nav-logo-text {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 800;
+            font-size: 1.1rem;
+            color: var(--white);
+            line-height: 1.1;
+        }
+        .nav-logo-text span {
+            font-size: .7rem;
+            font-weight: 400;
+            display: block;
+            color: var(--cyan);
+            letter-spacing: .05em;
+        }
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: .2rem;
+        }
+        .nav-links a {
+            display: flex;
+            align-items: center;
+            gap: .4rem;
+            color: rgba(255, 255, 255, .85);
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 500;
+            font-size: .9rem;
+            padding: .5rem .85rem;
+            border-radius: 8px;
+            transition: var(--transition);
+        }
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--cyan);
+            background: rgba(96, 165, 250, .12);
+        }
+        .nav-links a i {
+            font-size: .8rem;
+        }
+        .lang-toggle {
+            display: flex;
+            align-items: center;
+            background: rgba(255, 255, 255, .08);
+            border: 1px solid rgba(96, 165, 250, .25);
+            border-radius: 50px;
+            padding: 3px;
+            gap: 0;
+            flex-shrink: 0;
+        }
+        .lang-btn {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 600;
+            font-size: .78rem;
+            padding: .3rem .75rem;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+            background: transparent;
+            color: rgba(255, 255, 255, .6);
+            letter-spacing: .04em;
+            line-height: 1;
+        }
+        .lang-btn.active {
+            background: var(--bright-blue);
+            color: var(--white);
+            box-shadow: 0 2px 10px rgba(59, 130, 246, .35);
+        }
+        .lang-btn:hover:not(.active) {
+            color: var(--white);
+            background: rgba(255, 255, 255, .1);
+        }
+        .nav-cta {
+            display: flex;
+            align-items: center;
+            gap: .8rem;
+            flex-shrink: 0;
+        }
+        .nav-phone {
+            color: var(--cyan);
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 600;
+            font-size: .85rem;
+            display: flex;
+            align-items: center;
+            gap: .35rem;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: .5rem;
+            border: none;
+            background: none;
+        }
+        .hamburger span {
+            display: block;
+            width: 26px;
+            height: 2.5px;
+            background: var(--white);
+            border-radius: 2px;
+            transition: var(--transition);
+        }
+        .hamburger.open span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+        .hamburger.open span:nth-child(2) {
+            opacity: 0;
+        }
+        .hamburger.open span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+
+        /* Mobile Menu */
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 999;
+            background: var(--navy);
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity .3s;
+        }
+        .mobile-menu.active {
+            opacity: 1;
+            pointer-events: all;
+            display: flex;
+        }
+        .mobile-menu a {
+            display: flex;
+            align-items: center;
+            gap: .75rem;
+            color: var(--white);
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+            transition: var(--transition);
+        }
+        .mobile-menu a:hover {
+            color: var(--cyan);
+        }
+        .mobile-close {
+            position: absolute;
+            top: 1.2rem;
+            right: 1.5rem;
+            font-size: 1.8rem;
+            color: var(--white);
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        .mobile-lang-toggle {
+            display: flex;
+            align-items: center;
+            background: rgba(255, 255, 255, .08);
+            border: 1px solid rgba(96, 165, 250, .25);
+            border-radius: 50px;
+            padding: 4px;
+            gap: 0;
+        }
+        .mobile-lang-btn {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 600;
+            font-size: .9rem;
+            padding: .45rem 1.1rem;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+            background: transparent;
+            color: rgba(255, 255, 255, .6);
+        }
+        .mobile-lang-btn.active {
+            background: var(--bright-blue);
+            color: var(--white);
+        }
+
+        /* ── HERO ── */
+        #home {
+            min-height: 100vh;
+            background: linear-gradient(135deg, var(--navy) 0%, var(--dark-blue) 55%, #162d5a 100%);
+            position: relative;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            padding-top: 80px;
+        }
+        #home::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(circle at 20% 80%, rgba(96, 165, 250, .08) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(37, 99, 235, .12) 0%, transparent 50%);
+            pointer-events: none;
+        }
+        .circuit-bg {
+            position: absolute;
+            inset: 0;
+            opacity: .04;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%2360a5fa' stroke-width='0.8'%3E%3Crect x='10' y='10' width='40' height='40' rx='4'/%3E%3Ccircle cx='30' cy='30' r='4'/%3E%3Cline x1='30' y1='10' x2='30' y2='26'/%3E%3Cline x1='30' y1='34' x2='30' y2='50'/%3E%3Cline x1='10' y1='30' x2='26' y2='30'/%3E%3Cline x1='34' y1='30' x2='50' y2='30'/%3E%3C/g%3E%3C/svg%3E");
+        }
+        .hero-inner {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+            padding: 4rem 0;
+        }
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: .5rem;
+            background: rgba(96, 165, 250, .12);
+            border: 1px solid rgba(96, 165, 250, .25);
+            color: var(--cyan);
+            font-size: .78rem;
+            font-weight: 600;
+            letter-spacing: .1em;
+            padding: .35rem .9rem;
+            border-radius: 50px;
+            margin-bottom: 1rem;
+        }
+        .hero-badge i {
+            font-size: .65rem;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%,
+            100% {
+                opacity: 1
+            }
+            50% {
+                opacity: .4
+            }
+        }
+        .hero-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(2rem, 5vw, 3.4rem);
+            font-weight: 800;
+            color: var(--white);
+            line-height: 1.12;
+            margin-bottom: 1.2rem;
+        }
+        .hero-title .gradient-text {
+            background: linear-gradient(90deg, var(--cyan), var(--bright-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero-desc {
+            color: rgba(255, 255, 255, .7);
+            font-size: 1.05rem;
+            line-height: 1.7;
+            margin-bottom: 2rem;
+        }
+        .hero-stats {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2.5rem;
+        }
+        .hero-stat-num {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--cyan);
+        }
+        .hero-stat-label {
+            font-size: .78rem;
+            color: rgba(255, 255, 255, .55);
+            margin-top: .1rem;
+        }
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        /* ── HERO COVER POSTER ── */
+        .hero-cover {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            height: 420px;
+        }
+        .hero-cover .cover-frame {
+            width: 100%;
+            max-width: 440px;
+            background: rgba(255, 255, 255, .06);
+            backdrop-filter: blur(4px);
+            border: 2px solid rgba(255, 255, 255, .10);
+            border-radius: 28px;
+            padding: 2rem 2rem 1.8rem;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, .35), inset 0 1px 0 rgba(255, 255, 255, .08);
+            text-align: center;
+            transition: var(--transition);
+        }
+        .hero-cover .cover-frame:hover {
+            border-color: rgba(96, 165, 250, .3);
+            box-shadow: 0 24px 72px rgba(37, 99, 235, .15), inset 0 1px 0 rgba(255, 255, 255, .08);
+        }
+        .hero-cover .cover-frame img {
+            width: 100%;
+            max-height: 280px;
+            object-fit: contain;
+            border-radius: 12px;
+            margin: 0 auto;
+            filter: drop-shadow(0 8px 24px rgba(0, 0, 0, .3));
+        }
+        .hero-cover .cover-frame .cover-brand {
+            margin-top: 1rem;
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            font-size: .85rem;
+            letter-spacing: .15em;
+            color: rgba(255, 255, 255, .5);
+            text-transform: uppercase;
+        }
+        .hero-cover .cover-frame .cover-brand strong {
+            color: var(--cyan);
+            font-weight: 700;
+        }
+
+        /* ── TICKER ── */
+        .ticker-wrap {
+            background: var(--dark-blue);
+            padding: .7rem 0;
+            overflow: hidden;
+            border-top: 1px solid rgba(96, 165, 250, .10);
+            border-bottom: 1px solid rgba(96, 165, 250, .10);
+            position: relative;
+            z-index: 1;
+        }
+        .ticker-inner {
+            display: flex;
+            gap: 3rem;
+            white-space: nowrap;
+            animation: ticker 20s linear infinite;
+        }
+        @keyframes ticker {
+            from {
+                transform: translateX(0)
+            }
+            to {
+                transform: translateX(-50%)
+            }
+        }
+        .ticker-item {
+            display: inline-flex;
+            align-items: center;
+            gap: .6rem;
+            color: rgba(255, 255, 255, .7);
+            font-size: .85rem;
+            font-weight: 600;
+            letter-spacing: .03em;
+        }
+        .ticker-item i {
+            color: var(--bright-blue);
+        }
+
+        /* ── ABOUT ── */
+        #about {
+            padding: 3rem 0;
+            position: relative;
+            z-index: 1;
+        }
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+        .about-img-wrap {
+            position: relative;
+        }
+        .about-card {
+            background: var(--navy);
+            border-radius: 20px;
+            padding: 2.5rem;
+            color: var(--white);
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .about-card-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+        .about-card-icon {
+            width: 48px;
+            height: 48px;
+            background: rgba(96, 165, 250, .12);
+            border: 1px solid rgba(96, 165, 250, .2);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: var(--cyan);
+            flex-shrink: 0;
+        }
+        .about-card-content h4 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            margin-bottom: .25rem;
+        }
+        .about-card-content p {
+            font-size: .88rem;
+            color: rgba(255, 255, 255, .65);
+            line-height: 1.5;
+        }
+        .float-badge {
+            position: absolute;
+            bottom: -1rem;
+            right: -1rem;
+            background: var(--light-blue);
+            color: var(--white);
+            border-radius: 14px;
+            padding: 1rem 1.4rem;
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 800;
+            font-size: 1.4rem;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+        .float-badge span {
+            display: block;
+            font-size: .7rem;
+            font-weight: 400;
+            opacity: .8;
+        }
+        .about-text p {
+            color: var(--grey);
+            line-height: 1.8;
+            margin-bottom: 1.2rem;
+        }
+        .about-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: .6rem;
+            margin-top: 1.5rem;
+        }
+        .about-tag {
+            background: var(--white);
+            border: 1.5px solid var(--soft-grey);
+            color: var(--navy);
+            font-size: .8rem;
+            font-weight: 600;
+            padding: .4rem .9rem;
+            border-radius: 50px;
+        }
+
+        /* ── YOUTUBE VIDEO SECTION ── */
+        .video-section {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 2px solid var(--soft-grey);
+        }
+        .video-section .section-label {
+            color: var(--bright-blue);
+        }
+        .video-section .section-title {
+            margin-bottom: .5rem;
+        }
+        .video-section .section-title span {
+            color: var(--light-blue);
+        }
+        .video-section .sub-desc {
+            color: var(--grey);
+            margin-bottom: 2rem;
+        }
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+        .video-card {
+            background: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            border: 1.5px solid var(--soft-grey);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        .video-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 16px 48px rgba(13, 26, 58, .12);
+            border-color: var(--bright-blue);
+        }
+        .video-card .video-wrap {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            background: var(--navy);
+        }
+        .video-card .video-wrap iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .video-card .video-meta {
+            padding: 1rem 1.2rem 1.2rem;
+        }
+        .video-card .video-meta h4 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            font-size: .95rem;
+            color: var(--navy);
+            margin-bottom: .2rem;
+        }
+        .video-card .video-meta p {
+            font-size: .82rem;
+            color: var(--grey);
+            line-height: 1.5;
+        }
+
+        /* ── SERVICES ── */
+        #services {
+            padding: 3rem 0;
+            position: relative;
+            z-index: 1;
+        }
+        .services-header {
+            text-align: center;
+            margin-bottom: 3.5rem;
+        }
+        .services-header .section-title {
+            margin-bottom: .75rem;
+        }
+        .services-header p {
+            color: var(--grey);
+            max-width: 520px;
+            margin: 0 auto;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+        .service-card {
+            background: var(--grey-white);
+            border: 1.5px solid var(--soft-grey);
+            border-radius: var(--radius);
+            padding: 2rem;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .service-card a {
+            display: block;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+        }
+        .service-card::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, var(--navy), var(--light-blue));
+            opacity: 0;
+            transition: var(--transition);
+            z-index: 0;
+        }
+        .service-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 48px rgba(13, 26, 58, .12);
+            border-color: var(--light-blue);
+        }
+        .service-card:hover::before {
+            opacity: 1;
+        }
+        .service-card:hover .service-icon,
+        .service-card:hover .service-title,
+        .service-card:hover .service-desc,
+        .service-card:hover .service-feature {
+            color: var(--white);
+        }
+        .service-card:hover .service-icon {
+            background: rgba(255, 255, 255, .15);
+            border-color: rgba(255, 255, 255, .25);
+        }
+        .service-content {
+            position: relative;
+            z-index: 1;
+            pointer-events: none;
+        }
+        .service-icon {
+            width: 58px;
+            height: 58px;
+            background: #dce5ff;
+            border: 1.5px solid #c3d0ff;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: var(--light-blue);
+            margin-bottom: 1.2rem;
+            transition: var(--transition);
+        }
+        .service-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: .6rem;
+            transition: var(--transition);
+        }
+        .service-desc {
+            font-size: .87rem;
+            color: var(--grey);
+            line-height: 1.65;
+            margin-bottom: 1rem;
+            transition: var(--transition);
+        }
+        .service-features {
+            display: flex;
+            flex-direction: column;
+            gap: .3rem;
+        }
+        .service-feature {
+            display: flex;
+            align-items: center;
+            gap: .45rem;
+            font-size: .8rem;
+            color: var(--grey);
+            transition: var(--transition);
+        }
+        .service-feature i {
+            font-size: .6rem;
+            color: var(--light-blue);
+        }
+        .service-card:hover .service-feature i {
+            color: var(--cyan);
+        }
+        .service-card .click-hint {
+            margin-top: 1rem;
+            font-size: .72rem;
+            color: var(--grey);
+            font-weight: 600;
+            letter-spacing: .05em;
+            text-transform: uppercase;
+            opacity: 0.5;
+            transition: var(--transition);
+            pointer-events: none;
+            position: relative;
+            z-index: 1;
+        }
+        .service-card:hover .click-hint {
+            color: var(--cyan);
+            opacity: 1;
+        }
+
+        /* ── PROCESS ── */
+        #process {
+            padding: 3rem 0;
+            position: relative;
+            z-index: 1;
+        }
+        #process .section-frame {
+            background: var(--navy);
+            border-color: rgba(255, 255, 255, 0.08);
+        }
+        #process .section-frame:hover {
+            border-color: rgba(96, 165, 250, 0.25);
+        }
+        .process-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .process-header .section-title {
+            color: var(--white);
+        }
+        .process-header p {
+            color: rgba(255, 255, 255, .6);
+        }
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            position: relative;
+        }
+        .process-steps::before {
+            content: '';
+            position: absolute;
+            top: 36px;
+            left: 12.5%;
+            right: 12.5%;
+            height: 2px;
+            background: linear-gradient(90deg, var(--cyan), var(--light-blue));
+            opacity: .4;
+        }
+        .step-item {
+            text-align: center;
+            position: relative;
+        }
+        .step-num {
+            width: 72px;
+            height: 72px;
+            background: rgba(96, 165, 250, .08);
+            border: 2px solid rgba(96, 165, 250, .3);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.2rem;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--cyan);
+            position: relative;
+            z-index: 1;
+        }
+        .step-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: .4rem;
+        }
+        .step-desc {
+            font-size: .84rem;
+            color: rgba(255, 255, 255, .55);
+            line-height: 1.6;
+        }
+
+        /* ── REVIEWS ── */
+        #reviews {
+            padding: 3rem 0;
+            position: relative;
+            z-index: 1;
+        }
+        .reviews-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .slider-wrap {
+            position: relative;
+        }
+        .slider-track {
+            display: flex;
+            gap: 1.5rem;
+            transition: transform .5s cubic-bezier(.4, 0, .2, 1);
+        }
+        .review-card {
+            min-width: calc(33.333% - 1rem);
+            background: var(--white);
+            border: 1.5px solid var(--soft-grey);
+            border-radius: var(--radius);
+            padding: 1.8rem;
+            flex-shrink: 0;
+            box-shadow: var(--shadow);
+        }
+        .review-stars {
+            color: #f59e0b;
+            margin-bottom: .8rem;
+            font-size: .95rem;
+        }
+        .review-text {
+            font-size: .9rem;
+            color: var(--text);
+            line-height: 1.7;
+            font-style: italic;
+            margin-bottom: 1.2rem;
+        }
+        .reviewer {
+            display: flex;
+            align-items: center;
+            gap: .8rem;
+        }
+        .reviewer-avatar {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: var(--light-blue);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            color: var(--white);
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .reviewer-name {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            font-size: .9rem;
+            color: var(--navy);
+        }
+        .reviewer-loc {
+            font-size: .75rem;
+            color: var(--grey);
+        }
+        .slider-controls {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2.5rem;
+        }
+        .slider-btn {
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            background: var(--white);
+            border: 2px solid var(--soft-grey);
+            color: var(--navy);
+            font-size: 1rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+        .slider-btn:hover {
+            background: var(--light-blue);
+            color: var(--white);
+            border-color: var(--light-blue);
+        }
+        .slider-dots {
+            display: flex;
+            gap: .5rem;
+        }
+        .slider-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #c3d0ff;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        .slider-dot.active {
+            background: var(--light-blue);
+            width: 24px;
+            border-radius: 4px;
+        }
+
+        /* ── CONTACT ── */
+        #contact {
+            padding: 3rem 0;
+            position: relative;
+            z-index: 1;
+        }
+        .contact-header {
+            text-align: center;
+            margin-bottom: 3.5rem;
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.3fr;
+            gap: 3rem;
+            align-items: start;
+        }
+        .contact-info h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 1.5rem;
+        }
+        .contact-items {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+        .contact-item-icon {
+            width: 48px;
+            height: 48px;
+            background: #dce5ff;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            color: var(--light-blue);
+            flex-shrink: 0;
+        }
+        .contact-item-text h4 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            font-size: .9rem;
+            color: var(--navy);
+            margin-bottom: .2rem;
+        }
+        .contact-item-text p,
+        .contact-item-text a {
+            font-size: .87rem;
+            color: var(--grey);
+            line-height: 1.6;
+        }
+        .contact-item-text a:hover {
+            color: var(--light-blue);
+        }
+        .contact-hours {
+            background: var(--grey-white);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        .contact-hours h4 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: .8rem;
+        }
+        .hour-row {
+            display: flex;
+            justify-content: space-between;
+            font-size: .84rem;
+            color: var(--grey);
+            padding: .35rem 0;
+            border-bottom: 1px solid var(--soft-grey);
+        }
+        .hour-row:last-child {
+            border: none;
+        }
+        .open-badge {
+            background: #dcfce7;
+            color: #16a34a;
+            font-size: .72rem;
+            font-weight: 700;
+            padding: .2rem .6rem;
+            border-radius: 50px;
+        }
+        .contact-form {
+            background: var(--grey-white);
+            border: 1.5px solid var(--soft-grey);
+            border-radius: 20px;
+            padding: 2.5rem;
+        }
+        .contact-form h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 1.8rem;
+        }
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        .form-group label {
+            display: block;
+            font-size: .82rem;
+            font-weight: 600;
+            color: var(--navy);
+            margin-bottom: .4rem;
+        }
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: .75rem 1rem;
+            background: var(--white);
+            border: 1.5px solid var(--soft-grey);
+            border-radius: 10px;
+            font-family: 'Inter', sans-serif;
+            font-size: .9rem;
+            color: var(--text);
+            transition: var(--transition);
+            outline: none;
+        }
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            border-color: var(--light-blue);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, .1);
+        }
+        .form-group textarea {
+            resize: vertical;
+            min-height: 110px;
+        }
+        .form-submit {
+            width: 100%;
+            padding: .9rem;
+            background: linear-gradient(90deg, var(--light-blue), var(--navy));
+            color: var(--white);
+            border: none;
+            border-radius: 10px;
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: .5rem;
+        }
+        .form-submit:hover {
+            opacity: .9;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(37, 99, 235, .3);
+        }
+        .toast {
+            position: fixed;
+            bottom: 120px;
+            right: 1.5rem;
+            background: #16a34a;
+            color: var(--white);
+            padding: 1rem 1.5rem;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: .9rem;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, .2);
+            transform: translateX(120%);
+            transition: transform .4s;
+            z-index: 2000;
+            display: flex;
+            align-items: center;
+            gap: .6rem;
+        }
+        .toast.show {
+            transform: translateX(0);
+        }
+        .toast.error {
+            background: #dc2626;
+        }
+
+        /* ── LOCATION ── */
+        #location {
+            padding: 3rem 0;
+            position: relative;
+            z-index: 1;
+        }
+        .location-header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+        .map-container {
+            border-radius: 20px;
+            overflow: hidden;
+            height: 380px;
+            border: 2px solid var(--soft-grey);
+            box-shadow: var(--shadow);
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .location-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.2rem;
+            margin-top: 1.5rem;
+        }
+        .loc-card {
+            background: var(--white);
+            border: 1.5px solid var(--soft-grey);
+            border-radius: var(--radius);
+            padding: 1.4rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .loc-card i {
+            font-size: 1.4rem;
+            color: var(--light-blue);
+            width: 36px;
+            text-align: center;
+        }
+        .loc-card-text h4 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            font-size: .88rem;
+            color: var(--navy);
+        }
+        .loc-card-text p {
+            font-size: .82rem;
+            color: var(--grey);
+        }
+
+        /* ── BLOG SECTION ── */
+        #blog {
+            padding: 3rem 0;
+            position: relative;
+            z-index: 1;
+        }
+        .blog-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .blog-header .section-title {
+            margin-bottom: .5rem;
+        }
+        .blog-header p {
+            color: var(--grey);
+            max-width: 560px;
+            margin: 0 auto;
+        }
+        .blog-controls {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2.5rem;
+            flex-wrap: wrap;
+        }
+        .blog-controls .btn {
+            font-size: .85rem;
+            padding: .6rem 1.4rem;
+        }
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+        .blog-post {
+            background: var(--grey-white);
+            border: 1.5px solid var(--soft-grey);
+            border-radius: var(--radius);
+            overflow: hidden;
+            transition: var(--transition);
+            box-shadow: var(--shadow);
+            position: relative;
+        }
+        .blog-post:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 48px rgba(13, 26, 58, .12);
+            border-color: var(--bright-blue);
+        }
+        .blog-post .blog-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            background: var(--light-grey);
+        }
+        .blog-post .blog-body {
+            padding: 1.5rem;
+        }
+        .blog-post .blog-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: var(--navy);
+            margin-bottom: .5rem;
+        }
+        .blog-post .blog-desc {
+            font-size: .9rem;
+            color: var(--grey);
+            line-height: 1.7;
+            margin-bottom: 1rem;
+        }
+        .blog-post .blog-video {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            margin-bottom: .8rem;
+            background: var(--navy);
+        }
+        .blog-post .blog-video iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .blog-post .blog-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: .75rem;
+            color: var(--grey);
+            padding-top: .8rem;
+            border-top: 1px solid var(--soft-grey);
+            margin-top: .5rem;
+        }
+        .blog-post .blog-meta .blog-date {
+            display: flex;
+            align-items: center;
+            gap: .4rem;
+        }
+        .blog-post .blog-actions {
+            display: flex;
+            gap: .5rem;
+        }
+        .blog-post .blog-actions .btn-sm {
+            padding: .3rem .8rem;
+            font-size: .72rem;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+            transition: var(--transition);
+        }
+        .blog-post .blog-actions .btn-sm.btn-danger-sm {
+            background: #fee2e2;
+            color: #dc2626;
+        }
+        .blog-post .blog-actions .btn-sm.btn-danger-sm:hover {
+            background: #dc2626;
+            color: var(--white);
+        }
+        .blog-empty {
+            text-align: center;
+            padding: 4rem 2rem;
+            color: var(--grey);
+            background: var(--grey-white);
+            border-radius: var(--radius);
+            border: 2px dashed var(--soft-grey);
+        }
+        .blog-empty i {
+            font-size: 3rem;
+            color: var(--soft-grey);
+            margin-bottom: 1rem;
+        }
+        .blog-empty h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: .5rem;
+        }
+
+        /* Admin toggle & panel */
+        .admin-toggle {
+            display: inline-flex;
+            align-items: center;
+            gap: .5rem;
+            font-size: .8rem;
+            color: var(--grey);
+            cursor: pointer;
+            padding: .4rem 1rem;
+            border-radius: 50px;
+            border: 1.5px solid var(--soft-grey);
+            background: var(--white);
+            transition: var(--transition);
+        }
+        .admin-toggle:hover {
+            border-color: var(--bright-blue);
+            color: var(--navy);
+        }
+        .admin-toggle i {
+            font-size: .85rem;
+        }
+        .admin-toggle.active {
+            background: var(--light-blue);
+            color: var(--white);
+            border-color: var(--light-blue);
+        }
+        .admin-panel {
+            display: none;
+            margin-top: 1.5rem;
+            padding: 2rem;
+            background: var(--grey-white);
+            border-radius: var(--radius);
+            border: 1.5px solid var(--soft-grey);
+        }
+        .admin-panel.show {
+            display: block;
+        }
+        .admin-panel h4 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 1rem;
+        }
+        .admin-panel .admin-hint {
+            font-size: .85rem;
+            color: var(--grey);
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+        .admin-panel .admin-hint code {
+            background: var(--white);
+            padding: .2rem .6rem;
+            border-radius: 4px;
+            font-size: .8rem;
+            border: 1px solid var(--soft-grey);
+        }
+        .admin-panel .admin-hint a {
+            color: var(--light-blue);
+            text-decoration: underline;
+        }
+        .admin-panel .admin-hint ul {
+            list-style: disc;
+            margin-left: 1.5rem;
+        }
+        .admin-panel .admin-hint ul li {
+            margin-bottom: .3rem;
+        }
+        .admin-upload-area {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: flex-start;
+        }
+        .password-protect {
+            display: flex;
+            align-items: center;
+            gap: .8rem;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+        .password-protect input {
+            padding: .5rem 1rem;
+            border: 1.5px solid var(--soft-grey);
+            border-radius: 8px;
+            font-size: .9rem;
+            font-family: 'Inter', sans-serif;
+            outline: none;
+            transition: var(--transition);
+            background: var(--white);
+        }
+        .password-protect input:focus {
+            border-color: var(--light-blue);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, .1);
+        }
+        .password-protect .status {
+            font-size: .85rem;
+            font-weight: 600;
+        }
+        .password-protect .status.success {
+            color: #16a34a;
+        }
+        .password-protect .status.error {
+            color: #dc2626;
+        }
+
+        /* ── FLOAT BUTTONS ── */
+        .float-btns {
+            position: fixed;
+            bottom: 2rem;
+            right: 1.5rem;
+            z-index: 900;
+            display: flex;
+            flex-direction: column;
+            gap: .75rem;
+            align-items: flex-end;
+        }
+        .float-btn {
+            display: flex;
+            align-items: center;
+            gap: .6rem;
+            padding: .7rem 1rem .7rem .9rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: .82rem;
+            font-family: 'Space Grotesk', sans-serif;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, .2);
+            transition: var(--transition);
+            white-space: nowrap;
+            border: none;
+        }
+        .float-btn span {
+            transition: var(--transition);
+            max-width: 0;
+            overflow: hidden;
+            opacity: 0;
+        }
+        .float-btn:hover span {
+            max-width: 120px;
+            opacity: 1;
+            margin-left: .2rem;
+        }
+        .float-btn i {
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+        .float-btn.whatsapp {
+            background: #25d366;
+            color: var(--white);
+        }
+        .float-btn.phone {
+            background: var(--light-blue);
+            color: var(--white);
+        }
+        .float-btn.top {
+            background: var(--navy);
+            color: var(--white);
+        }
+        .float-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 28px rgba(0, 0, 0, .25);
+        }
+        .arrow-up {
+            animation: bounce-up 2s ease-in-out infinite;
+        }
+        @keyframes bounce-up {
+            0%,
+            100% {
+                transform: translateY(0)
+            }
+            50% {
+                transform: translateY(-4px)
+            }
+        }
+
+        /* ── FOOTER ── */
+        footer {
+            background: var(--navy);
+            padding: 4rem 0 0;
+            position: relative;
+            z-index: 1;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.4fr 1fr 1fr 1fr;
+            gap: 3rem;
+            padding-bottom: 3rem;
+            border-bottom: 1px solid rgba(255, 255, 255, .08);
+        }
+        .footer-brand .nav-logo {
+            margin-bottom: 1rem;
+        }
+        .footer-brand p {
+            font-size: .87rem;
+            color: rgba(255, 255, 255, .55);
+            line-height: 1.7;
+            margin-bottom: 1.4rem;
+        }
+        .social-icons {
+            display: flex;
+            gap: .7rem;
+        }
+        .social-icon {
+            width: 38px;
+            height: 38px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            transition: var(--transition);
+            color: var(--white);
+        }
+        .social-icon.fb {
+            background: #1877f2;
+        }
+        .social-icon.wa {
+            background: #25d366;
+        }
+        .social-icon.yt {
+            background: #ff0000;
+        }
+        .social-icon.tt {
+            background: linear-gradient(135deg, #010101, #69c9d0, #ee1d52);
+        }
+        .social-icon:hover {
+            transform: translateY(-3px) scale(1.1);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, .3);
+        }
+        .footer-col h4 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 1.2rem;
+            font-size: .95rem;
+        }
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: .55rem;
+        }
+        .footer-links a {
+            font-size: .84rem;
+            color: rgba(255, 255, 255, .55);
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: .4rem;
+        }
+        .footer-links a:hover {
+            color: var(--cyan);
+            padding-left: .3rem;
+        }
+        .footer-links a i {
+            font-size: .65rem;
+            color: var(--bright-blue);
+        }
+        .footer-contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: .7rem;
+            margin-bottom: .9rem;
+        }
+        .footer-contact-item i {
+            color: var(--cyan);
+            font-size: .85rem;
+            margin-top: .1rem;
+            width: 14px;
+        }
+        .footer-contact-item span {
+            font-size: .83rem;
+            color: rgba(255, 255, 255, .55);
+            line-height: 1.5;
+        }
+        .footer-contact-item a {
+            color: rgba(255, 255, 255, .55);
+        }
+        .footer-contact-item a:hover {
+            color: var(--cyan);
+        }
+        .footer-bottom {
+            padding: 1.2rem 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: .4rem;
+            text-align: center;
+        }
+        .footer-bottom .copyright {
+            font-size: .85rem;
+            color: rgba(255, 255, 255, .45);
+        }
+        .footer-bottom .copyright strong {
+            color: rgba(255, 255, 255, .7);
+        }
+        .footer-bottom .developer {
+            font-size: .82rem;
+            color: rgba(255, 255, 255, .35);
+        }
+        .footer-bottom .developer a {
+            color: var(--cyan);
+            font-weight: 600;
+            transition: var(--transition);
+        }
+        .footer-bottom .developer a:hover {
+            color: var(--white);
+            text-decoration: underline;
+        }
+        .footer-bottom .footer-tags {
+            font-size: .75rem;
+            color: rgba(255, 255, 255, .2);
+            letter-spacing: .05em;
+        }
+
+        /* ── SCROLL REVEAL ── */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity .7s ease, transform .7s ease;
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ── CUSTOM CURSOR ── */
+        .cursor-dot,
+        .cursor-ring {
+            pointer-events: none;
+            position: fixed;
+            border-radius: 50%;
+            z-index: 9999;
+            transform: translate(-50%, -50%);
+            transition: opacity .2s;
+        }
+        .cursor-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--bright-blue);
+            top: 0;
+            left: 0;
+        }
+        .cursor-ring {
+            width: 32px;
+            height: 32px;
+            border: 2px solid rgba(96, 165, 250, .5);
+            top: 0;
+            left: 0;
+            transition: width .15s, height .15s, border-color .15s;
+        }
+        .cursor-ring.hovering {
+            width: 48px;
+            height: 48px;
+            border-color: var(--light-blue);
+        }
+        @media (hover: none) {
+            .cursor-dot,
+            .cursor-ring {
+                display: none;
+            }
+        }
+
+        /* ── RESPONSIVE ── */
+        @media (max-width: 1024px) {
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 2rem;
+            }
+            .video-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .blog-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 860px) {
+            .hero-inner {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .hero-cover {
+                display: none;
+            }
+            .hero-stats {
+                justify-content: center;
+            }
+            .hero-buttons {
+                justify-content: center;
+            }
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+            .float-badge {
+                position: relative;
+                bottom: auto;
+                right: auto;
+                display: inline-block;
+                margin-top: 1.5rem;
+            }
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            .process-steps {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .process-steps::before {
+                display: none;
+            }
+            .nav-links,
+            .nav-phone {
+                display: none;
+            }
+            .hamburger {
+                display: flex;
+            }
+            .review-card {
+                min-width: calc(100% - 1rem);
+            }
+            .location-cards {
+                grid-template-columns: 1fr;
+            }
+            .lang-toggle {
+                display: none;
+            }
+            .video-grid {
+                grid-template-columns: 1fr;
+            }
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+            .section-frame {
+                padding: 1rem;
+                border-radius: 14px;
+            }
+        }
+        @media (max-width: 600px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+            .process-steps {
+                grid-template-columns: 1fr;
+            }
+            .hero-title {
+                font-size: 2rem;
+            }
+            .hero-cover .cover-frame {
+                padding: 1rem;
+            }
+            .hero-cover .cover-frame img {
+                max-height: 180px;
+            }
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+            .password-protect {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .section-frame {
+                padding: 0.8rem;
+                border-radius: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ── CUBE PATTERN OVERLAY ── -->
+    <div class="cube-bg"></div>
+
+    <!-- ── CUSTOM CURSOR ── -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- ── NAVBAR ── -->
+    <nav id="navbar">
+        <div class="container nav-inner">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <img src="logo.jpeg" alt="Damak IT Centre Logo" />
+                </div>
+                <div class="nav-logo-text">
+                    <span class="i18n" data-en="DAMAK" data-np="दमक">DAMAK</span>
+                    <span class="i18n" data-en="IT CENTRE" data-np="आईटी केन्द्र">IT CENTRE</span>
+                </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:1rem;">
+                <ul class="nav-links">
+                    <li><a href="#home" class="active"><i class="fas fa-house"></i> <span class="i18n" data-en="Home" data-np="गृहपृष्ठ">Home</span></a></li>
+                    <li><a href="#about"><i class="fas fa-circle-info"></i> <span class="i18n" data-en="About" data-np="हाम्रोबारे">About</span></a></li>
+                    <li><a href="#services"><i class="fas fa-gears"></i> <span class="i18n" data-en="Services" data-np="सेवाहरू">Services</span></a></li>
+                    <li><a href="#reviews"><i class="fas fa-star"></i> <span class="i18n" data-en="Reviews" data-np="समीक्षाहरू">Reviews</span></a></li>
+                    <li><a href="#contact"><i class="fas fa-envelope"></i> <span class="i18n" data-en="Contact" data-np="सम्पर्क">Contact</span></a></li>
+                    <li><a href="#blog"><i class="fas fa-blog"></i> <span class="i18n" data-en="Blog" data-np="ब्लग">Blog</span></a></li>
+                </ul>
+                <div class="lang-toggle" role="group" aria-label="Language selector">
+                    <button class="lang-btn active" id="langEN" onclick="setLang('en')" aria-label="English">EN</button>
+                    <button class="lang-btn" id="langNP" onclick="setLang('np')" aria-label="Nepali">नेपाली</button>
+                </div>
+            </div>
+            <div class="nav-cta">
+                <a href="tel:9863617278" class="nav-phone"><i class="fas fa-phone"></i> 986-3617278</a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-close" id="mobileClose" aria-label="Close menu"><i class="fas fa-xmark"></i></button>
+        <div class="mobile-lang-toggle" role="group" aria-label="Language selector">
+            <button class="mobile-lang-btn active" id="mobileLangEN" onclick="setLang('en')">EN</button>
+            <button class="mobile-lang-btn" id="mobileLangNP" onclick="setLang('np')">नेपाली</button>
+        </div>
+        <a href="#home" onclick="closeMobile()"><i class="fas fa-house"></i> <span class="i18n" data-en="Home" data-np="गृहपृष्ठ">Home</span></a>
+        <a href="#about" onclick="closeMobile()"><i class="fas fa-circle-info"></i> <span class="i18n" data-en="About" data-np="हाम्रोबारे">About</span></a>
+        <a href="#services" onclick="closeMobile()"><i class="fas fa-gears"></i> <span class="i18n" data-en="Services" data-np="सेवाहरू">Services</span></a>
+        <a href="#reviews" onclick="closeMobile()"><i class="fas fa-star"></i> <span class="i18n" data-en="Reviews" data-np="समीक्षाहरू">Reviews</span></a>
+        <a href="#contact" onclick="closeMobile()"><i class="fas fa-envelope"></i> <span class="i18n" data-en="Contact" data-np="सम्पर्क">Contact</span></a>
+        <a href="#blog" onclick="closeMobile()"><i class="fas fa-blog"></i> <span class="i18n" data-en="Blog" data-np="ब्लग">Blog</span></a>
+        <a href="tel:9863617278"><i class="fas fa-phone"></i> <span class="i18n" data-en="Call Us" data-np="फोन गर्नुहोस्">Call Us</span></a>
+    </div>
+
+    <!-- ── HERO ── -->
+    <section id="home">
+        <div class="circuit-bg"></div>
+        <div class="container">
+            <div class="hero-inner">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <i class="fas fa-circle"></i>
+                        <span class="i18n" data-en="Damak's #1 IT Solution Centre" data-np="दमकको नम्बर १ आईटी समाधान केन्द्र">Damak's #1 IT Solution Centre</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="i18n" data-en="Empowering You" data-np="प्रविधिद्वारा सशक्त">Empowering You</span><br>
+                        <span class="i18n" data-en="Through" data-np="तपाईंलाई">Through</span>
+                        <span class="gradient-text i18n" data-en="Technology" data-np="प्रविधि">Technology</span>
+                    </h1>
+                    <p class="hero-desc i18n" data-en="Complete IT solutions in Damak, Jhapa — Computer &amp; Laptop Repair, PC Sales, Accessories, CCTV Installation, and Networking. Fast. Reliable. Affordable." data-np="दमक, झापामा सम्पूर्ण आईटी समाधान — कम्प्युटर र ल्यापटप मर्मत, पिसी बिक्री, एक्सेसरीज, सीसीटीभी स्थापना, र नेटवर्किङ। छिटो। भरपर्दो। किफायती।">
+                        Complete IT solutions in Damak, Jhapa — Computer &amp; Laptop Repair, PC Sales, Accessories, CCTV Installation, and Networking. Fast. Reliable. Affordable.
+                    </p>
+                    <div class="hero-stats">
+                        <div>
+                            <div class="hero-stat-num">500+</div>
+                            <div class="hero-stat-label i18n" data-en="Devices Repaired" data-np="उपकरण मर्मत">Devices Repaired</div>
+                        </div>
+                        <div>
+                            <div class="hero-stat-num">200+</div>
+                            <div class="hero-stat-label i18n" data-en="CCTV Installed" data-np="सीसीटीभी जडान">CCTV Installed</div>
+                        </div>
+                        <div>
+                            <div class="hero-stat-num">2+</div>
+                            <div class="hero-stat-label i18n" data-en="Years in Damak" data-np="वर्ष दमकमा">Years in Damak</div>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#services" class="btn btn-primary"><i class="fas fa-gears"></i> <span class="i18n" data-en="Our Services" data-np="हाम्रा सेवाहरू">Our Services</span></a>
+                        <a href="tel:9863617278" class="btn btn-outline"><i class="fas fa-phone"></i> <span class="i18n" data-en="Call Now" data-np="अहिले फोन गर्नुहोस्">Call Now</span></a>
+                    </div>
+                </div>
+                <div class="hero-cover">
+                    <div class="cover-frame">
+                        <img src="poster.jpeg" alt="Damak IT Centre - Cover Poster" />
+                        <div class="cover-brand">
+                            <strong>DAMAK</strong> · IT CENTRE
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── TICKER ── -->
+    <div class="ticker-wrap">
+        <div class="ticker-inner" id="ticker">
+            <div class="ticker-item"><i class="fas fa-check-circle"></i> <span class="i18n" data-en="Computer Repair in Damak" data-np="दमकमा कम्प्युटर मर्मत">Computer Repair in Damak</span></div>
+            <div class="ticker-item"><i class="fas fa-check-circle"></i> <span class="i18n" data-en="Laptop Service Jhapa" data-np="झापामा ल्यापटप सेवा">Laptop Service Jhapa</span></div>
+            <div class="ticker-item"><i class="fas fa-check-circle"></i> <span class="i18n" data-en="CCTV Installation Damak" data-np="दमकमा सीसीटीभी स्थापना">CCTV Installation Damak</span></div>
+            <div class="ticker-item"><i class="fas fa-check-circle"></i> <span class="i18n" data-en="PC &amp; Accessories Nepal" data-np="नेपालमा पिसी र एक्सेसरीज">PC &amp; Accessories Nepal</span></div>
+            <div class="ticker-item"><i class="fas fa-check-circle"></i> <span class="i18n" data-en="Networking Solutions" data-np="नेटवर्किङ समाधान">Networking Solutions</span></div>
+            <div class="ticker-item"><i class="fas fa-check-circle"></i> <span class="i18n" data-en="IT Support Damak" data-np="दमकमा आईटी सहयोग">IT Support Damak</span></div>
+            <div class="ticker-item"><i class="fas fa-check-circle"></i> <span class="i18n" data-en="Computer Repair in Damak" data-np="दमकमा कम्प्युटर मर्मत">Computer Repair in Damak</span></div>
+            <div class="ticker-item"><i class="fas fa-check-circle"></i> <span class="i18n" data-en="Laptop Service Jhapa" data-np="झापामा ल्यापटप सेवा">Laptop Service Jhapa</span></div>
+            <div class="ticker-item"><i class="fas fa-check-circle"></i> <span class="i18n" data-en="CCTV Installation Damak" data-np="दमकमा सीसीटीभी स्थापना">CCTV Installation Damak</span></div>
+            <div class="ticker-item"><i class="fas fa-check-circle"></i> <span class="i18n" data-en="PC &amp; Accessories Nepal" data-np="नेपालमा पिसी र एक्सेसरीज">PC &amp; Accessories Nepal</span></div>
+            <div class="ticker-item"><i class="fas fa-check-circle"></i> <span class="i18n" data-en="Networking Solutions" data-np="नेटवर्किङ समाधान">Networking Solutions</span></div>
+            <div class="ticker-item"><i class="fas fa-check-circle"></i> <span class="i18n" data-en="IT Support Damak" data-np="दमकमा आईटी सहयोग">IT Support Damak</span></div>
+        </div>
+    </div>
+
+    <!-- ── ABOUT ── -->
+    <section id="about">
+        <div class="container">
+            <div class="section-frame reveal">
+                <div class="section-inner">
+                    <div class="about-grid">
+                        <div class="about-img-wrap">
+                            <div class="about-card">
+                                <div class="about-card-row">
+                                    <div class="about-card-icon"><i class="fas fa-laptop"></i></div>
+                                    <div class="about-card-content">
+                                        <h4 class="i18n" data-en="Laptop &amp; Computer Repair" data-np="ल्यापटप र कम्प्युटर मर्मत">Laptop &amp; Computer Repair</h4>
+                                        <p class="i18n" data-en="All brands, all models. Hardware &amp; software faults diagnosed and fixed fast." data-np="सबै ब्रान्ड, सबै मोडल। हार्डवेयर र सफ्टवेयर समस्या छिटो पत्ता लगाई ठीक गरिन्छ।">All brands, all models. Hardware &amp; software faults diagnosed and fixed fast.</p>
+                                    </div>
+                                </div>
+                                <div class="about-card-row">
+                                    <div class="about-card-icon"><i class="fas fa-camera"></i></div>
+                                    <div class="about-card-content">
+                                        <h4 class="i18n" data-en="CCTV &amp; Networking" data-np="सीसीटीभी र नेटवर्किङ">CCTV &amp; Networking</h4>
+                                        <p class="i18n" data-en="Professional CCTV installation and structured network cabling for home &amp; business." data-np="घर र व्यवसायका लागि पेशेवर सीसीटीभी स्थापना र नेटवर्क केबलिङ।">Professional CCTV installation and structured network cabling for home &amp; business.</p>
+                                    </div>
+                                </div>
+                                <div class="about-card-row">
+                                    <div class="about-card-icon"><i class="fas fa-headset"></i></div>
+                                    <div class="about-card-content">
+                                        <h4 class="i18n" data-en="On-Site IT Support" data-np="अन-साइट आईटी सहयोग">On-Site IT Support</h4>
+                                        <p class="i18n" data-en="We come to you — home visits and office calls available across Damak, Jhapa." data-np="हामी तपाईंकहाँ आउँछौं — दमक, झापाभरि घर र कार्यालय भ्रमण उपलब्ध।">We come to you — home visits and office calls available across Damak, Jhapa.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="float-badge">
+                                500+<span class="i18n" data-en="Happy Customers" data-np="खुसी ग्राहकहरू">Happy Customers</span>
+                            </div>
+                        </div>
+                        <div class="about-text">
+                            <span class="section-label i18n" data-en="About Us" data-np="हाम्रोबारे">About Us</span>
+                            <h2 class="section-title"><span class="i18n" data-en="Damak's Trusted " data-np="दमकको विश्वसनीय ">Damak's Trusted </span><span class="i18n" data-en="IT Partner" data-np="आईटी साझेदार">IT Partner</span></h2>
+                            <p style="margin-top:1rem;" class="i18n" data-en="Damak IT Centre is your one-stop technology shop in Damak-5, Jhapa. We started with a simple belief: everyone in our community deserves fast, honest, and affordable tech support — whether you're a student, a shopkeeper, or a growing business." data-np="दमक आईटी केन्द्र दमक-५, झापामा तपाईंको एकल प्रविधि पसल हो। हामीले एउटा सरल विश्वासका साथ सुरुवात गर्यौं: हाम्रो समुदायका सबैले छिटो, इमान्दार र किफायती प्रविधि सहयोग पाउनुपर्छ — चाहे तपाईं विद्यार्थी होस्, पसल सञ्चालक होस् वा बढ्दो व्यवसाय होस्।">
+                                Damak IT Centre is your one-stop technology shop in Damak-5, Jhapa. We started with a simple belief: everyone in our community deserves fast, honest, and affordable tech support — whether you're a student, a shopkeeper, or a growing business.
+                            </p>
+                            <p class="i18n" data-en="From repairing a cracked laptop screen to setting up an entire office network with CCTV surveillance, our certified technicians handle it all. We stock genuine PC parts, laptop accessories, and peripherals so you rarely need to travel to Biratnagar or Kathmandu." data-np="भाँचिएको ल्यापटप स्क्रिन मर्मतदेखि सीसीटीभी निगरानीसहित सम्पूर्ण कार्यालय नेटवर्क स्थापनासम्म, हाम्रा प्रमाणित प्राविधिकहरूले सबै कुरा सम्हाल्छन्। हामी वास्तविक पिसी पार्टस, ल्यापटप एक्सेसरीज र परिधीय सामग्री भण्डारण गर्छौं।">
+                                From repairing a cracked laptop screen to setting up an entire office network with CCTV surveillance, our certified technicians handle it all. We stock genuine PC parts, laptop accessories, and peripherals so you rarely need to travel to Biratnagar or Kathmandu.
+                            </p>
+                            <p class="i18n" data-en="Based in Jhapa, we serve customers across Damak, Birtamod, Mechinagar, and the broader eastern Nepal region. Empowering you through technology is not just our tagline — it's our daily mission." data-np="झापामा आधारित भई, हामी दमक, बिर्तामोड, मेचीनगर र पूर्वी नेपालका ग्राहकहरूलाई सेवा प्रदान गर्छौं। प्रविधिद्वारा तपाईंलाई सशक्त बनाउनु हाम्रो नाराभन्दा बढी — यो हाम्रो दैनिक मिशन हो।">
+                                Based in Jhapa, we serve customers across Damak, Birtamod, Mechinagar, and the broader eastern Nepal region. <strong>Empowering you through technology</strong> is not just our tagline — it's our daily mission.
+                            </p>
+                            <div class="about-tags">
+                                <span class="about-tag i18n" data-en="🏆 Certified Technicians" data-np="🏆 प्रमाणित प्राविधिक">🏆 Certified Technicians</span>
+                                <span class="about-tag i18n" data-en="⚡ Fast Turnaround" data-np="⚡ छिटो सेवा">⚡ Fast Turnaround</span>
+                                <span class="about-tag i18n" data-en="💰 Affordable Pricing" data-np="💰 किफायती मूल्य">💰 Affordable Pricing</span>
+                                <span class="about-tag i18n" data-en="📍 Damak, Jhapa" data-np="📍 दमक, झापा">📍 Damak, Jhapa</span>
+                                <span class="about-tag i18n" data-en="🔧 All Brands Serviced" data-np="🔧 सबै ब्रान्ड सेवा">🔧 All Brands Serviced</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ── YOUTUBE VIDEOS SECTION ── -->
+                    <div class="video-section">
+                        <span class="section-label i18n" data-en="Tech Insights" data-np="प्राविधिक जानकारी">Tech Insights</span>
+                        <h2 class="section-title"><span class="i18n" data-en="Watch Our " data-np="हेर्नुहोस् हाम्रो ">Watch Our </span><span class="i18n" data-en="IT Tutorials" data-np="आईटी ट्यूटोरियल">IT Tutorials</span></h2>
+                        <p class="sub-desc i18n" data-en="Learn about computer repair, CCTV setup, networking, and more — curated for our Damak community." data-np="कम्प्युटर मर्मत, सीसीटीभी सेटअप, नेटवर्किङ र थप बारे जान्नुहोस् — हाम्रो दमक समुदायको लागि तयार पारिएको।">
+                            Learn about computer repair, CCTV setup, networking, and more — curated for our Damak community.
+                        </p>
+                        <div class="video-grid">
+                            <div class="video-card">
+                                <div class="video-wrap">
+                                    <iframe src="https://www.youtube.com/embed/jNQXAC9IVRw?controls=1&modestbranding=1&rel=0" allowfullscreen loading="lazy" title="YouTube video 1"></iframe>
+                                </div>
+                                <div class="video-meta">
+                                    <h4 class="i18n" data-en="Computer Hardware Basics" data-np="कम्प्युटर हार्डवेयर आधारभूत">Computer Hardware Basics</h4>
+                                    <p class="i18n" data-en="Understanding the core components of a PC — perfect for beginners in Damak." data-np="पिसीका मुख्य घटकहरू बुझ्नुहोस् — दमकका शुरुवातकर्ताहरूको लागि उपयुक्त।">Understanding the core components of a PC — perfect for beginners in Damak.</p>
+                                </div>
+                            </div>
+                            <div class="video-card">
+                                <div class="video-wrap">
+                                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=1&modestbranding=1&rel=0" allowfullscreen loading="lazy" title="YouTube video 2"></iframe>
+                                </div>
+                                <div class="video-meta">
+                                    <h4 class="i18n" data-en="Laptop Repair Guide" data-np="ल्यापटप मर्मत गाइड">Laptop Repair Guide</h4>
+                                    <p class="i18n" data-en="Step-by-step troubleshooting for common laptop issues — screen, keyboard, and battery." data-np="सामान्य ल्यापटप समस्याहरूको लागि चरण-दर-चरण समाधान — स्क्रिन, किबोर्ड र ब्याट्री।">Step-by-step troubleshooting for common laptop issues — screen, keyboard, and battery.</p>
+                                </div>
+                            </div>
+                            <div class="video-card">
+                                <div class="video-wrap">
+                                    <iframe src="https://www.youtube.com/embed/9bZkp7q19f0?controls=1&modestbranding=1&rel=0" allowfullscreen loading="lazy" title="YouTube video 3"></iframe>
+                                </div>
+                                <div class="video-meta">
+                                    <h4 class="i18n" data-en="CCTV Installation Tips" data-np="सीसीटीभी स्थापना सुझाव">CCTV Installation Tips</h4>
+                                    <p class="i18n" data-en="Best practices for setting up CCTV cameras at your home or shop in Jhapa." data-np="झापामा तपाईंको घर वा पसलमा सीसीटीभी क्यामेरा सेटअप गर्ने उत्तम तरिकाहरू।">Best practices for setting up CCTV cameras at your home or shop in Jhapa.</p>
+                                </div>
+                            </div>
+                            <div class="video-card">
+                                <div class="video-wrap">
+                                    <iframe src="https://www.youtube.com/embed/YE7VzlLtp-4?controls=1&modestbranding=1&rel=0" allowfullscreen loading="lazy" title="YouTube video 4"></iframe>
+                                </div>
+                                <div class="video-meta">
+                                    <h4 class="i18n" data-en="Networking Essentials" data-np="नेटवर्किङ आधारभूत">Networking Essentials</h4>
+                                    <p class="i18n" data-en="How to set up a reliable LAN and Wi-Fi network for your office or home." data-np="तपाईंको कार्यालय वा घरको लागि भरपर्दो LAN र वाइ-फाइ नेटवर्क कसरी सेटअप गर्ने।">How to set up a reliable LAN and Wi-Fi network for your office or home.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p style="margin-top:1.2rem;font-size:.82rem;color:var(--grey);text-align:center;">
+                            <i class="fas fa-info-circle" style="color:var(--light-blue);"></i>
+                            <span class="i18n" data-en="These videos are for demonstration. Replace with your own content or tutorials." data-np="यी भिडियोहरू प्रदर्शनको लागि हुन्। आफ्नै सामग्री वा ट्यूटोरियलले प्रतिस्थापन गर्नुहोस्।">
+                                These videos are for demonstration. Replace with your own content or tutorials.
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── SERVICES ── -->
+    <section id="services">
+        <div class="container">
+            <div class="section-frame reveal">
+                <div class="section-inner">
+                    <div class="services-header">
+                        <span class="section-label i18n" data-en="What We Do" data-np="हामी के गर्छौं">What We Do</span>
+                        <h2 class="section-title"><span class="i18n" data-en="Complete " data-np="सम्पूर्ण ">Complete </span><span class="i18n" data-en="IT Solutions" data-np="आईटी समाधान">IT Solutions</span><span class="i18n" data-en=" Under One Roof" data-np=" एउटै छतमुनि"> Under One Roof</span></h2>
+                        <p class="i18n" data-en="From hardware repairs to surveillance systems — we've got Damak covered. Click any service to learn more." data-np="हार्डवेयर मर्मतदेखि निगरानी प्रणालीसम्म — हामी दमकलाई कभर गर्छौं। थप जान्न कुनै पनि सेवामा क्लिक गर्नुहोस्।">
+                            From hardware repairs to surveillance systems — we've got Damak covered. Click any service to learn more.
+                        </p>
+                    </div>
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <a href="computer-laptop-repair.html"></a>
+                            <div class="service-content">
+                                <div class="service-icon"><i class="fas fa-laptop-medical"></i></div>
+                                <div class="service-title i18n" data-en="Computer &amp; Laptop Repair" data-np="कम्प्युटर र ल्यापटप मर्मत">Computer &amp; Laptop Repair</div>
+                                <p class="service-desc i18n" data-en="Expert diagnosis and repair for all laptop and desktop brands — screen replacement, motherboard repair, keyboard, battery, and more." data-np="सबै ल्यापटप र डेस्कटप ब्रान्डका लागि विशेषज्ञ निदान र मर्मत — स्क्रिन प्रतिस्थापन, मदरबोर्ड मर्मत, किबोर्ड, ब्याट्री र थप।">
+                                    Expert diagnosis and repair for all laptop and desktop brands — screen replacement, motherboard repair, keyboard, battery, and more.
+                                </p>
+                                <div class="service-features">
+                                    <div class="service-feature"><i class="fas fa-circle"></i> <span class="i18n" data-en="Screen &amp; display replacement" data-np="स्क्रिन र डिस्प्ले प्रतिस्थापन">Screen &amp; display replacement</span></div>
+                                    <div class="service-feature"><i class="fas fa-circle"></i> <span class="i18n" data-en="Motherboard &amp; chip-level repair" data-np="मदरबोर्ड र चिप-स्तर मर्मत">Motherboard &amp; chip-level repair</span></div>
+                                    <div class="service-feature"><i class="fas fa-circle"></i> <span class="i18n" data-en="Virus removal &amp; OS installation" data-np="भाइरस हटाउने र OS स्थापना">Virus removal &amp; OS installation</span></div>
+                                    <div class="service-feature"><i class="fas fa-circle"></i> <span class="i18n" data-en="Battery &amp; keyboard replacement" data-np="ब्याट्री र किबोर्ड प्रतिस्थापन">Battery &amp; keyboard replacement</span></div>
+                                </div>
+                                <div class="click-hint"><i class="fas fa-arrow-right"></i> <span class="i18n" data-en="Click for details" data-np="विवरणको लागि क्लिक गर्नुहोस्">Click for details</span></div>
+                            </div>
+                        </div>
+                        <div class="service-card">
+                            <a href="pc-sales-assembly.html"></a>
+                            <div class="service-content">
+                                <div class="service-icon"><i class="fas fa-desktop"></i></div>
+                                <div class="service-title i18n" data-en="PC Sales &amp; Assembly" data-np="पिसी बिक्री र असेम्बली">PC Sales &amp; Assembly</div>
+                                <p class="service-desc i18n" data-en="Custom PC builds, branded desktops, and second-hand refurbished systems. We assemble PCs tailored to your budget and needs." data-np="कस्टम पिसी निर्माण, ब्रान्डेड डेस्कटप र सेकेन्डह्यान्ड रिफर्बिश्ड सिस्टम। हामी तपाईंको बजेट र आवश्यकता अनुसार पिसी जोड्छौं।">
+                                    Custom PC builds, branded desktops, and second-hand refurbished systems. We assemble PCs tailored to your budget and needs.
+                                </p>
+                                <div class="service-features">
+                                    <div class="service-feature"><i class="fas fa-circle"></i> <span class="i18n" data-en="Gaming &amp; office PC builds" data-np="गेमिङ र अफिस पिसी निर्माण">Gaming &amp; office PC builds</span></div>
+                                    <div class="service-feature"><i class="fas fa-circle"></i> <span class="i18n" data-en="Branded &amp; assembled units" data-np="ब्रान्डेड र असेम्बल्ड युनिट">Branded &amp; assembled units</span></div>
+                                    <div class="service-feature"><i class="fas fa-circle"></i> <span class="i18n" data-en="RAM &amp; storage upgrades" data-np="र्याम र स्टोरेज अपग्रेड">RAM &amp; storage upgrades</span></div>
+                                    <div class="service-feature"><i class="fas fa-circle"></i> <span class="i18n" data-en="Free after-sales support" data-np="नि:शुल्क बिक्री-पश्चात सहयोग">Free after-sales support</span></div>
+                                </div>
+                                <div class="click-hint"><i class="fas fa-arrow-right"></i> <span class="i18n" data-en="Click for details" data-np="विवरणको लागि क्लिक गर्नुहोस्">Click for details</span></div>
+                            </div>
+                        </div>
+                        <div class="service-card">
+                            <a href="cctv-installation.html"></a>
+                            <div class="service-content">
+                                <div class="service-icon"><i class="fas fa-camera-cctv"></i></div>
+                                <div class="service-title i18n" data-en="CCTV Installation" data-np="सीसीटीभी स्थापना">CCTV Installation</div>
+                                <p class="service-desc i18n" data-en="Professional CCTV camera setup for homes, shops, and offices. HD and IP cameras with remote viewing and 24/7 recording." data-np="घर, पसल र कार्यालयका लागि पेशेवर सीसीटीभी क्यामेरा सेटअप। रिमोट भ्युइङ र २४/७ रेकर्डिङसहित HD र IP क्यामेरा।">
+                                    Professional CCTV camera setup for homes, shops, and offices. HD and IP cameras with remote viewing and 24/7 recording.
+                                </p>
+                                <div class="service-features">
+                                    <div class="service-feature"><i class="fas fa-circle"></i> <span class="i18n" data-en="HD &amp; IP camera installation" data-np="HD र IP क्यामेरा स्थापना">HD &amp; IP camera installation</span></div>
+                                    <div class="service-feature"><i class="fas fa-circle"></i> <span class="i18n" data-en="DVR &amp; NVR setup" data-np="DVR र NVR सेटअप">DVR &amp; NVR setup</span></div>
+                                    <div class="service-feature"><i class="fas fa-circle"></i> <span class="i18n" data-en="Remote mobile access" data-np="रिमोट मोबाइल पहुँच">Remote mobile access</span></div>
+                                    <div class="service-feature"><i class="fas fa-circle"></i> <span class="i18n" data-en="Night vision cameras" data-np="नाइट भिजन क्यामेरा">Night vision cameras</span></div>
+                                </div>
+                                <div class="click-hint"><i class="fas fa-arrow-right"></i> <span class="i18n" data-en="Click for details" data-np="विवरणको लागि क्लिक गर्नुहोस्">Click for details</span></div>
+                            </div>
+                        </div>
+                        <div class="service-card">
+                            <a href="networking-solutions.html"></a>
+                            <div class="service-content">
+                                <div class="service-icon"><i class="fas fa-network-wired"></i></div>
+                                <div class="service-title i18n" data-en="Networking Solutions" data-np="नेटवर्किङ समाधान">Networking Solutions</div>
+                                <p class="service-desc i18n" data-en="LAN cabling, Wi-Fi setup, router configuration, and internet troubleshooting for homes and businesses in Damak." data-np="दमकका घर र व्यवसायका लागि LAN केबलिङ, वाइ-फाइ सेटअप, राउटर कन्फिगरेसन र इन्टरनेट समस्या समाधान।">
+                                    LAN cabling, Wi-Fi setup, router configuration, and internet troubleshooting for homes and businesses in Damak.
+                                </p>
+                                <div class="service-features">
+                                    <div class="service-feature"><i class="fas fa-circle"></i> <span class="i18n" data-en="LAN &amp; Wi-Fi setup" data-np="LAN र वाइ-फाइ सेटअप">LAN &amp; Wi-Fi setup</span></div>
+                                    <div class="service-feature"><i class="fas fa-circle"></i> <span class="i18n" data-en="Router &amp; switch configuration" data-np="राउटर र स्विच कन्फिगरेसन">Router &amp; switch configuration</span></div>
+                                    <div class="service-feature"><i class="fas fa-circle"></i> <span class="i18n" data-en="Structured cabling" data-np="स्ट्रक्चर्ड केबलिङ">Structured cabling</span></div>
+                                    <div class="service-feature"><i class="fas fa-circle"></i> <span class="i18n" data-en="Network troubleshooting" data-np="नेटवर्क समस्या समाधान">Network troubleshooting</span></div>
+                                </div>
+                                <div class="click-hint"><i class="fas fa-arrow-right"></i> <span class="i18n" data-en="Click for details" data-np="विवरणको लागि क्लिक गर्नुहोस्">Click for details</span></div>
+                            </div>
+                        </div>
+                        <div class="service-card">
+                            <a href="pc-accessories-parts.html"></a>
+                            <div class="service-content">
+                                <div class="service-icon"><i class="fas fa-computer-mouse"></i></div>
+                                <div class="service-title i18n" data-en="PC Accessories &amp; Parts" data-np="पिसी एक्सेसरीज र पार्टस">PC Accessories &amp; Parts</div>
+                                <p class="service-desc i18n" data-en="Wide range of genuine computer parts, peripherals, and accessories — keyboards, mice, monitors, headphones, USB hubs, and more." data-np="किबोर्ड, माउस, मनिटर, हेडफोन, USB हब र थपसहित वास्तविक कम्प्युटर पार्टस, परिधीय र एक्सेसरीजको विस्तृत संग्रह।">
+                                    Wide range of genuine computer parts, peripherals, and accessories — keyboards, mice, monitors, headphones, USB hubs, and more.
+                                </p>
+                                <div class="service-features">
+                                    <div class="service-feature"><i class="fas fa-circle"></i> <span class="i18n" data-en="Keyboards, mice &amp; monitors" data-np="किबोर्ड, माउस र मनिटर">Keyboards, mice &amp; monitors</span></div>
+                                    <div class="service-feature"><i class="fas fa-circle"></i> <span class="i18n" data-en="RAM, SSD &amp; HDD" data-np="र्याम, SSD र HDD">RAM, SSD &amp; HDD</span></div>
+                                    <div class="service-feature"><i class="fas fa-circle"></i> <span class="i18n" data-en="Cables &amp; adapters" data-np="केबल र एडाप्टर">Cables &amp; adapters</span></div>
+                                    <div class="service-feature"><i class="fas fa-circle"></i> <span class="i18n" data-en="UPS &amp; power supplies" data-np="UPS र पावर सप्लाई">UPS &amp; power supplies</span></div>
+                                </div>
+                                <div class="click-hint"><i class="fas fa-arrow-right"></i> <span class="i18n" data-en="Click for details" data-np="विवरणको लागि क्लिक गर्नुहोस्">Click for details</span></div>
+                            </div>
+                        </div>
+                        <div class="service-card">
+                            <a href="software-it-support.html"></a>
+                            <div class="service-content">
+                                <div class="service-icon"><i class="fas fa-code"></i></div>
+                                <div class="service-title i18n" data-en="Software &amp; IT Support" data-np="सफ्टवेयर र आईटी सहयोग">Software &amp; IT Support</div>
+                                <p class="service-desc i18n" data-en="Windows installation, driver setup, antivirus, data recovery, and all software-related IT support for individuals and businesses." data-np="विन्डोज स्थापना, ड्राइभर सेटअप, एन्टिभाइरस, डेटा रिकभरी र व्यक्ति र व्यवसायका लागि सबै सफ्टवेयर-सम्बन्धी आईटी सहयोग।">
+                                    Windows installation, driver setup, antivirus, data recovery, and all software-related IT support for individuals and businesses.
+                                </p>
+                                <div class="service-features">
+                                    <div class="service-feature"><i class="fas fa-circle"></i> <span class="i18n" data-en="Windows &amp; driver installation" data-np="विन्डोज र ड्राइभर स्थापना">Windows &amp; driver installation</span></div>
+                                    <div class="service-feature"><i class="fas fa-circle"></i> <span class="i18n" data-en="Antivirus &amp; security" data-np="एन्टिभाइरस र सुरक्षा">Antivirus &amp; security</span></div>
+                                    <div class="service-feature"><i class="fas fa-circle"></i> <span class="i18n" data-en="Data backup &amp; recovery" data-np="डेटा ब्याकअप र रिकभरी">Data backup &amp; recovery</span></div>
+                                    <div class="service-feature"><i class="fas fa-circle"></i> <span class="i18n" data-en="Remote support available" data-np="रिमोट सहयोग उपलब्ध">Remote support available</span></div>
+                                </div>
+                                <div class="click-hint"><i class="fas fa-arrow-right"></i> <span class="i18n" data-en="Click for details" data-np="विवरणको लागि क्लिक गर्नुहोस्">Click for details</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── PROCESS ── -->
+    <section id="process">
+        <div class="container">
+            <div class="section-frame reveal" style="background:var(--navy);border-color:rgba(255,255,255,0.08);">
+                <div class="section-inner">
+                    <div class="process-header">
+                        <span class="section-label i18n" data-en="How It Works" data-np="कसरी काम गर्छ" style="color:var(--cyan);">How It Works</span>
+                        <h2 class="section-title" style="color:var(--white)"><span class="i18n" data-en="Simple " data-np="सरल ">Simple </span><span style="color:var(--cyan)"><span class="i18n" data-en="4-Step" data-np="४-चरण">4-Step</span></span><span class="i18n" data-en=" Service Process" data-np=" सेवा प्रक्रिया"> Service Process</span></h2>
+                        <p class="i18n" data-en="Bringing your device in is easy. Here's what happens next." data-np="तपाईंको उपकरण ल्याउनु सजिलो छ। अब के हुन्छ भनी हेर्नुहोस्।" style="color:rgba(255,255,255,0.6);">
+                            Bringing your device in is easy. Here's what happens next.
+                        </p>
+                    </div>
+                    <div class="process-steps">
+                        <div class="step-item">
+                            <div class="step-num">01</div>
+                            <div class="step-title i18n" data-en="Bring Your Device" data-np="उपकरण ल्याउनुहोस्">Bring Your Device</div>
+                            <p class="step-desc i18n" data-en="Walk in to our Damak-5 location or call us to arrange a pickup." data-np="हाम्रो दमक-५ स्थानमा आउनुहोस् वा पिकअप व्यवस्था गर्न फोन गर्नुहोस्।">
+                                Walk in to our Damak-5 location or call us to arrange a pickup.
+                            </p>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-num">02</div>
+                            <div class="step-title i18n" data-en="Free Diagnosis" data-np="नि:शुल्क निदान">Free Diagnosis</div>
+                            <p class="step-desc i18n" data-en="Our technician inspects your device and explains the problem clearly." data-np="हाम्रो प्राविधिकले तपाईंको उपकरण जाँच गर्छ र समस्या स्पष्ट रूपमा बताउँछ।">
+                                Our technician inspects your device and explains the problem clearly.
+                            </p>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-num">03</div>
+                            <div class="step-title i18n" data-en="Fast Repair" data-np="छिटो मर्मत">Fast Repair</div>
+                            <p class="step-desc i18n" data-en="We fix it with quality parts. Most repairs done same or next day." data-np="हामी गुणस्तरीय पार्टस प्रयोग गरी ठीक गर्छौं। अधिकांश मर्मत उही वा भोलिपल्ट सकिन्छ।">
+                                We fix it with quality parts. Most repairs done same or next day.
+                            </p>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-num">04</div>
+                            <div class="step-title i18n" data-en="Pick Up &amp; Go" data-np="लिनुहोस् र जानुहोस्">Pick Up &amp; Go</div>
+                            <p class="step-desc i18n" data-en="Collect your repaired device. We guarantee our work." data-np="मर्मत गरिएको उपकरण लिनुहोस्। हामी हाम्रो काममा ग्यारेन्टी दिन्छौं।">
+                                Collect your repaired device. We guarantee our work.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── REVIEWS ── -->
+    <section id="reviews">
+        <div class="container">
+            <div class="section-frame reveal">
+                <div class="section-inner">
+                    <div class="reviews-header">
+                        <span class="section-label i18n" data-en="Customer Reviews" data-np="ग्राहक समीक्षाहरू">Customer Reviews</span>
+                        <h2 class="section-title"><span class="i18n" data-en="What Damak Says " data-np="दमक हाम्रोबारे ">What Damak Says </span><span class="i18n" data-en="About Us" data-np="के भन्छ">About Us</span></h2>
+                    </div>
+                    <div class="slider-wrap">
+                        <div style="overflow:hidden;">
+                            <div class="slider-track" id="sliderTrack">
+                                <div class="review-card">
+                                    <div class="review-stars">★★★★★</div>
+                                    <p class="review-text i18n" data-en='"My laptop screen was cracked and they fixed it in one day at a very fair price. Very professional service in Damak. Highly recommended!"' data-np='"मेरो ल्यापटपको स्क्रिन भाँचिएको थियो र उनीहरूले एकै दिनमा उचित मूल्यमा ठीक गरिदिए। दमकमा धेरै पेशेवर सेवा। अत्यन्त सिफारिस गरिन्छ!"'>
+                                        "My laptop screen was cracked and they fixed it in one day at a very fair price. Very professional service in Damak. Highly recommended!"
+                                    </p>
+                                    <div class="reviewer">
+                                        <div class="reviewer-avatar">S</div>
+                                        <div>
+                                            <div class="reviewer-name">Suman Rai</div>
+                                            <div class="reviewer-loc">📍 Damak-3, Jhapa</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review-card">
+                                    <div class="review-stars">★★★★★</div>
+                                    <p class="review-text i18n" data-en='"Got CCTV cameras installed for my shop. The team was very skilled and set up the mobile remote access so I can see everything on my phone. Great work!"' data-np='"मेरो पसलमा सीसीटीभी क्यामेरा जडान गराएँ। टिम धेरै दक्ष थियो र मोबाइल रिमोट पहुँच सेटअप गरिदियो। राम्रो काम!"'>
+                                        "Got CCTV cameras installed for my shop. The team was very skilled and set up the mobile remote access so I can see everything on my phone. Great work!"
+                                    </p>
+                                    <div class="reviewer">
+                                        <div class="reviewer-avatar">P</div>
+                                        <div>
+                                            <div class="reviewer-name">Puja Sharma</div>
+                                            <div class="reviewer-loc">📍 Birtamod, Jhapa</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review-card">
+                                    <div class="review-stars">★★★★★</div>
+                                    <p class="review-text i18n" data-en='"Best IT shop in Damak! They assembled a full gaming PC for me within budget and even helped with Windows setup and drivers. Will come back for sure."' data-np='"दमकको सबैभन्दा राम्रो आईटी पसल! उनीहरूले बजेटभित्र पूर्ण गेमिङ पिसी जोडिदिए र विन्डोज सेटअप र ड्राइभरमा पनि सहयोग गरे। पक्कै फर्किन्छु।"'>
+                                        "Best IT shop in Damak! They assembled a full gaming PC for me within budget and even helped with Windows setup and drivers. Will come back for sure."
+                                    </p>
+                                    <div class="reviewer">
+                                        <div class="reviewer-avatar">A</div>
+                                        <div>
+                                            <div class="reviewer-name">Arun Thapa</div>
+                                            <div class="reviewer-loc">📍 Damak-7, Jhapa</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review-card">
+                                    <div class="review-stars">★★★★☆</div>
+                                    <p class="review-text i18n" data-en='"They fixed my office networking issue same day. Our LAN was very slow and now it works perfectly. Affordable pricing and friendly staff."' data-np='"उनीहरूले मेरो कार्यालयको नेटवर्किङ समस्या उही दिन ठीक गरे। हाम्रो LAN धेरै ढिलो थियो र अब राम्रोसँग काम गर्छ। किफायती मूल्य र मित्रवत कर्मचारी।"'>
+                                        "They fixed my office networking issue same day. Our LAN was very slow and now it works perfectly. Affordable pricing and friendly staff."
+                                    </p>
+                                    <div class="reviewer">
+                                        <div class="reviewer-avatar">R</div>
+                                        <div>
+                                            <div class="reviewer-name">Rita Adhikari</div>
+                                            <div class="reviewer-loc">📍 Mechinagar, Jhapa</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review-card">
+                                    <div class="review-stars">★★★★★</div>
+                                    <p class="review-text i18n" data-en='"My computer had a bad virus and all files were at risk. Damak IT Centre recovered everything and installed proper antivirus protection. Very reliable service!"' data-np='"मेरो कम्प्युटरमा खराब भाइरस थियो र सबै फाइल जोखिममा थिए। दमक आईटी केन्द्रले सबै कुरा रिकभर गर्यो र उचित एन्टिभाइरस सुरक्षा स्थापना गर्यो। धेरै भरपर्दो सेवा!"'>
+                                        "My computer had a bad virus and all files were at risk. Damak IT Centre recovered everything and installed proper antivirus protection. Very reliable service!"
+                                    </p>
+                                    <div class="reviewer">
+                                        <div class="reviewer-avatar">B</div>
+                                        <div>
+                                            <div class="reviewer-name">Bikash Gurung</div>
+                                            <div class="reviewer-loc">📍 Damak-5, Jhapa</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-controls">
+                            <button class="slider-btn" id="prevBtn" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+                            <div class="slider-dots" id="sliderDots"></div>
+                            <button class="slider-btn" id="nextBtn" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── CONTACT ── -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-frame reveal">
+                <div class="section-inner">
+                    <div class="contact-header">
+                        <span class="section-label i18n" data-en="Get In Touch" data-np="सम्पर्कमा रहनुहोस्">Get In Touch</span>
+                        <h2 class="section-title"><span class="i18n" data-en="Visit Us or " data-np="हामीलाई भेट्नुहोस् वा ">Visit Us or </span><span class="i18n" data-en="Send a Message" data-np="सन्देश पठाउनुहोस्">Send a Message</span></h2>
+                    </div>
+                    <div class="contact-grid">
+                        <div>
+                            <div class="contact-info">
+                                <h3 class="i18n" data-en="Contact Details" data-np="सम्पर्क विवरण">Contact Details</h3>
+                                <div class="contact-items">
+                                    <div class="contact-item">
+                                        <div class="contact-item-icon"><i class="fas fa-location-dot"></i></div>
+                                        <div class="contact-item-text">
+                                            <h4 class="i18n" data-en="Our Location" data-np="हाम्रो स्थान">Our Location</h4>
+                                            <p class="i18n" data-en="Damak-5, Jhapa District, Nepal&lt;br&gt;Near main market area" data-np="दमक-५, झापा जिल्ला, नेपाल&lt;br&gt;मुख्य बजार नजिक">Damak-5, Jhapa District, Nepal<br>Near main market area</p>
+                                        </div>
+                                    </div>
+                                    <div class="contact-item">
+                                        <div class="contact-item-icon"><i class="fas fa-phone"></i></div>
+                                        <div class="contact-item-text">
+                                            <h4 class="i18n" data-en="Call / WhatsApp" data-np="फोन / ह्वाट्सएप">Call / WhatsApp</h4>
+                                            <a href="tel:9863617278">986-3617278</a>
+                                        </div>
+                                    </div>
+                                    <div class="contact-item">
+                                        <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+                                        <div class="contact-item-text">
+                                            <h4 class="i18n" data-en="Email Us" data-np="इमेल गर्नुहोस्">Email Us</h4>
+                                            <a href="mailto:damakitcentre@gmail.com">damakitcentre@gmail.com</a>
+                                        </div>
+                                    </div>
+                                    <div class="contact-item">
+                                        <div class="contact-item-icon"><i class="fab fa-facebook-f"></i></div>
+                                        <div class="contact-item-text">
+                                            <h4>Facebook</h4>
+                                            <a href="https://facebook.com/damakitcentre" target="_blank" rel="noopener noreferrer">facebook.com/damakitcentre</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-hours">
+                                <h4><i class="fas fa-clock" style="color:var(--light-blue);margin-right:.4rem;"></i> <span class="i18n" data-en="Business Hours" data-np="व्यापार समय">Business Hours</span></h4>
+                                <div class="hour-row"><span class="i18n" data-en="Sunday – Friday" data-np="आइतबार – शुक्रबार">Sunday – Friday</span> <span>8:00 AM – 8:00 PM <span class="open-badge i18n" data-en="Open" data-np="खुला">Open</span></span></div>
+                                <div class="hour-row"><span class="i18n" data-en="Saturday" data-np="शनिबार">Saturday</span> <span>9:00 AM – 6:00 PM</span></div>
+                                <div class="hour-row"><span class="i18n" data-en="Public Holidays" data-np="सार्वजनिक बिदा">Public Holidays</span> <span>10:00 AM – 4:00 PM</span></div>
+                            </div>
+                        </div>
+                        <div class="contact-form">
+                            <h3><i class="fas fa-paper-plane" style="color:var(--light-blue);margin-right:.5rem;"></i> <span class="i18n" data-en="Send Us a Message" data-np="हामीलाई सन्देश पठाउनुहोस्">Send Us a Message</span></h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="i18n" data-en="Your Name" data-np="तपाईंको नाम">Your Name</label>
+                                    <input type="text" id="fname" placeholder="e.g. Ram Prasad" />
+                                </div>
+                                <div class="form-group">
+                                    <label class="i18n" data-en="Phone Number" data-np="फोन नम्बर">Phone Number</label>
+                                    <input type="tel" id="fphone" placeholder="98XXXXXXXX" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="i18n" data-en="Service Needed" data-np="आवश्यक सेवा">Service Needed</label>
+                                <select id="fservice">
+                                    <option value="" class="i18n" data-en="-- Select Service --" data-np="-- सेवा छान्नुहोस् --">-- Select Service --</option>
+                                    <option class="i18n" data-en="Computer / Laptop Repair" data-np="कम्प्युटर / ल्यापटप मर्मत">Computer / Laptop Repair</option>
+                                    <option class="i18n" data-en="CCTV Installation" data-np="सीसीटीभी स्थापना">CCTV Installation</option>
+                                    <option class="i18n" data-en="PC Purchase / Assembly" data-np="पिसी खरिद / असेम्बली">PC Purchase / Assembly</option>
+                                    <option class="i18n" data-en="Networking Setup" data-np="नेटवर्किङ सेटअप">Networking Setup</option>
+                                    <option class="i18n" data-en="Software / OS Support" data-np="सफ्टवेयर / OS सहयोग">Software / OS Support</option>
+                                    <option class="i18n" data-en="Accessories Purchase" data-np="एक्सेसरीज खरिद">Accessories Purchase</option>
+                                    <option class="i18n" data-en="Other" data-np="अन्य">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="i18n" data-en="Message" data-np="सन्देश">Message</label>
+                                <textarea id="fmsg" placeholder="Describe your issue or query..."></textarea>
+                            </div>
+                            <button class="form-submit" onclick="submitForm()">
+                                <i class="fas fa-paper-plane"></i> <span class="i18n" data-en="Send Message" data-np="सन्देश पठाउनुहोस्">Send Message</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── LOCATION MAP ── -->
+    <section id="location">
+        <div class="container">
+            <div class="section-frame reveal">
+                <div class="section-inner">
+                    <div class="location-header">
+                        <span class="section-label i18n" data-en="Find Us" data-np="हामीलाई खोज्नुहोस्">Find Us</span>
+                        <h2 class="section-title"><span class="i18n" data-en="We're in " data-np="हामी ">We're in </span><span class="i18n" data-en="Damak-5, Jhapa" data-np="दमक-५, झापामा छौं">Damak-5, Jhapa</span></h2>
+                    </div>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56578.765!2d87.6977!3d26.6541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e58d7c92b6c3c1%3A0x1234!2sDamak%2C+Jhapa%2C+Nepal!5e0!3m2!1sen!2snp!4v1" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Damak IT Centre Location"></iframe>
+                    </div>
+                    <div class="location-cards">
+                        <div class="loc-card">
+                            <i class="fas fa-map-pin"></i>
+                            <div class="loc-card-text">
+                                <h4 class="i18n" data-en="Address" data-np="ठेगाना">Address</h4>
+                                <p class="i18n" data-en="Damak-5, Jhapa District, Nepal" data-np="दमक-५, झापा जिल्ला, नेपाल">Damak-5, Jhapa District, Nepal</p>
+                            </div>
+                        </div>
+                        <div class="loc-card">
+                            <i class="fas fa-phone"></i>
+                            <div class="loc-card-text">
+                                <h4 class="i18n" data-en="Phone" data-np="फोन">Phone</h4>
+                                <p><a href="tel:9863617278" style="color:var(--light-blue);">986-3617278</a></p>
+                            </div>
+                        </div>
+                        <div class="loc-card">
+                            <i class="fas fa-envelope"></i>
+                            <div class="loc-card-text">
+                                <h4 class="i18n" data-en="Email" data-np="इमेल">Email</h4>
+                                <p><a href="mailto:damakitcentre@gmail.com" style="color:var(--light-blue);">damakitcentre@gmail.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════ -->
+    <!-- ── BLOG SECTION (above footer) ── -->
+    <!-- ════════════════════════════════════════════════════ -->
+    <section id="blog">
+        <div class="container">
+            <div class="section-frame reveal">
+                <div class="section-inner">
+                    <div class="blog-header">
+                        <span class="section-label i18n" data-en="Our Blog" data-np="हाम्रो ब्लग">Our Blog</span>
+                        <h2 class="section-title"><span class="i18n" data-en="Latest " data-np="नवीनतम ">Latest </span><span class="i18n" data-en="Tech Updates" data-np="प्राविधिक अपडेटहरू">Tech Updates</span></h2>
+                        <p class="i18n" data-en="Insights, tips, and news from the Damak IT Centre team — powered by Cloudinary." data-np="दमक आईटी केन्द्र टोलीबाट जानकारी, सुझाव र समाचार — क्लाउडिनरीद्वारा संचालित।">
+                            Insights, tips, and news from the Damak IT Centre team — powered by Cloudinary.
+                        </p>
+                    </div>
+
+                    <!-- Admin controls -->
+                    <div class="blog-controls">
+                        <button class="btn btn-primary" id="addBlogBtn" onclick="openUploadWidget()">
+                            <i class="fas fa-plus-circle"></i> <span class="i18n" data-en="Add Blog Post" data-np="ब्लग थप्नुहोस्">Add Blog Post</span>
+                        </button>
+                        <button class="admin-toggle" id="adminToggle" onclick="toggleAdminPanel()">
+                            <i class="fas fa-user-cog"></i> <span id="adminToggleLabel" class="i18n" data-en="Manage Content" data-np="सामग्री व्यवस्थापन">Manage Content</span>
+                        </button>
+                        <button class="btn btn-secondary" onclick="fetchBlogPosts()">
+                            <i class="fas fa-sync"></i> <span class="i18n" data-en="Refresh" data-np="ताजा गर्नुहोस्">Refresh</span>
+                        </button>
+                    </div>
+
+                    <!-- Admin Panel with Password Protection -->
+                    <div class="admin-panel" id="adminPanel">
+                        <h4><i class="fas fa-cloud-upload-alt" style="color:var(--light-blue);"></i> <span class="i18n" data-en="Cloudinary Content Manager" data-np="क्लाउडिनरी सामग्री व्यवस्थापक">Cloudinary Content Manager</span></h4>
+
+                        <div class="password-protect">
+                            <input type="password" id="adminPassword" placeholder="Enter admin password..." />
+                            <button class="btn btn-primary" onclick="verifyPassword()" style="padding:.5rem 1.2rem;font-size:.85rem;">
+                                <i class="fas fa-key"></i> <span class="i18n" data-en="Unlock" data-np="खोल्नुहोस्">Unlock</span>
+                            </button>
+                            <span class="status" id="passwordStatus"></span>
+                            <span style="font-size:.75rem;color:var(--grey);margin-left:.5rem;">
+                                <span class="i18n" data-en="(Default: " data-np="(पूर्वनिर्धारित: ">(Default: </span><code>admin123</code><span class="i18n" data-en=")" data-np=")">)</span>
+                            </span>
+                        </div>
+
+                        <div id="adminContent" style="display:none;">
+                            <div class="admin-hint">
+                                <p><strong class="i18n" data-en="How it works:" data-np="कसरी काम गर्छ:">How it works:</strong> <span class="i18n" data-en="All blog posts are stored in your Cloudinary account with the tag" data-np="सबै ब्लग पोस्टहरू तपाईंको क्लाउडिनरी खातामा ट्यागको साथ भण्डारण गरिन्छ">All blog posts are stored in your Cloudinary account with the tag</span> <code>website-gallery</code>.</p>
+                                <ul>
+                                    <li><span class="i18n" data-en="Add: Click 'Add Blog Post' or use the Cloudinary Dashboard to upload images with the tag" data-np="थप्नुहोस्: 'ब्लग थप्नुहोस्' क्लिक गर्नुहोस् वा क्लाउडिनरी ड्यासबोर्ड प्रयोग गरी ट्यागको साथ छविहरू अपलोड गर्नुहोस्">Add: Click 'Add Blog Post' or use the Cloudinary Dashboard to upload images with the tag</span> <code>website-gallery</code>.</li>
+                                    <li><span class="i18n" data-en="Context data: Set" data-np="सन्दर्भ डाटा: सेट गर्नुहोस्">Context data: Set</span> <code>title</code>, <code>description</code>, <span class="i18n" data-en="and optional" data-np="र वैकल्पिक">and optional</span> <code>youtube</code> (<span class="i18n" data-en="video ID" data-np="भिडियो आईडी">video ID</span>) <span class="i18n" data-en="in Cloudinary's context editor." data-np="क्लाउडिनरीको सन्दर्भ सम्पादकमा।">in Cloudinary's context editor.</span></li>
+                                    <li><span class="i18n" data-en="Remove: Click the" data-np="हटाउनुहोस्: क्लिक गर्नुहोस्">Remove: Click the</span> <span style="color:#dc2626;">✕ Delete</span> <span class="i18n" data-en="button on any post below, or delete the asset from your Cloudinary Dashboard." data-np="तल कुनै पोस्टमा बटन, वा तपाईंको क्लाउडिनरी ड्यासबोर्डबाट सम्पत्ति मेटाउनुहोस्।">button on any post below, or delete the asset from your Cloudinary Dashboard.</span></li>
+                                    <li><span class="i18n" data-en="Dashboard:" data-np="ड्यासबोर्ड:">Dashboard:</span> <a href="https://cloudinary.com/console" target="_blank" rel="noopener noreferrer"><span class="i18n" data-en="Open Cloudinary Console →" data-np="क्लाउडिनरी कन्सोल खोल्नुहोस् →">Open Cloudinary Console →</span></a></li>
+                                </ul>
+                                <p style="margin-top:.5rem;font-size:.8rem;color:var(--grey);">
+                                    <i class="fas fa-info-circle" style="color:var(--light-blue);"></i>
+                                    <span class="i18n" data-en="Tag:" data-np="ट्याग:">Tag:</span> <code>website-gallery</code> &nbsp;|&nbsp;
+                                    <span class="i18n" data-en="All changes sync automatically on page refresh." data-np="सबै परिवर्तनहरू पृष्ठ रिफ्रेस हुँदा स्वतः सिङ्क हुन्छन्।">All changes sync automatically on page refresh.</span>
+                                </p>
+                            </div>
+                            <div class="admin-upload-area">
+                                <button class="btn btn-success" onclick="openUploadWidget()">
+                                    <i class="fas fa-cloud-upload-alt"></i> <span class="i18n" data-en="Upload via Widget" data-np="विजेट मार्फत अपलोड गर्नुहोस्">Upload via Widget</span>
+                                </button>
+                                <span style="font-size:.8rem;color:var(--grey);">
+                                    <i class="fas fa-arrow-right"></i> <span class="i18n" data-en="Or upload directly from your Cloudinary Dashboard" data-np="वा सीधै तपाईंको क्लाउडिनरी ड्यासबोर्डबाट अपलोड गर्नुहोस्">Or upload directly from your Cloudinary Dashboard</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog Grid -->
+                    <div class="blog-grid" id="blogGrid">
+                        <div class="blog-empty" id="blogEmpty">
+                            <i class="fas fa-newspaper"></i>
+                            <h3 class="i18n" data-en="No blog posts yet" data-np="अहिलेसम्म कुनै ब्लग पोस्ट छैन">No blog posts yet</h3>
+                            <p class="i18n" data-en="Upload your first post via Cloudinary with the tag" data-np="क्लाउडिनरी मार्फत ट्यागको साथ आफ्नो पहिलो पोस्ट अपलोड गर्नुहोस्">Upload your first post via Cloudinary with the tag</p>
+                            <code>website-gallery</code>
+                            <button class="btn btn-primary" style="margin-top:1rem;" onclick="openUploadWidget()">
+                                <i class="fas fa-plus-circle"></i> <span class="i18n" data-en="Add First Post" data-np="पहिलो पोस्ट थप्नुहोस्">Add First Post</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── FOOTER ── -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="nav-logo" style="margin-bottom:1rem;">
+                        <div class="logo-icon">
+                            <img src="logo.jpeg" alt="Damak IT Centre Logo" style="width:34px;height:34px;object-fit:contain;" />
+                        </div>
+                        <div class="nav-logo-text" style="color:white;">
+                            <span class="i18n" data-en="DAMAK" data-np="दमक">DAMAK</span><span class="i18n" data-en="IT CENTRE" data-np="आईटी केन्द्र">IT CENTRE</span>
+                        </div>
+                    </div>
+                    <p class="i18n" data-en="Empowering Damak through technology. Your trusted partner for all IT needs — repairs, CCTV, networking, and accessories in Jhapa, Nepal." data-np="प्रविधिद्वारा दमकलाई सशक्त बनाउँदै। मर्मत, सीसीटीभी, नेटवर्किङ र एक्सेसरीजसहित झापा, नेपालमा सबै आईटी आवश्यकताका लागि तपाईंको विश्वसनीय साझेदार।">
+                        Empowering Damak through technology. Your trusted partner for all IT needs — repairs, CCTV, networking, and accessories in Jhapa, Nepal.
+                    </p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/damakitcentre" target="_blank" rel="noopener noreferrer" class="social-icon fb" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/9779863617278" target="_blank" rel="noopener noreferrer" class="social-icon wa" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://youtube.com/@damakitcentre" target="_blank" rel="noopener noreferrer" class="social-icon yt" title="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://tiktok.com/@damakitcentre" target="_blank" rel="noopener noreferrer" class="social-icon tt" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="i18n" data-en="Quick Links" data-np="द्रुत लिंकहरू">Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="#home"><i class="fas fa-chevron-right"></i> <span class="i18n" data-en="Home" data-np="गृहपृष्ठ">Home</span></a>
+                        <a href="#about"><i class="fas fa-chevron-right"></i> <span class="i18n" data-en="About Us" data-np="हाम्रोबारे">About Us</span></a>
+                        <a href="#services"><i class="fas fa-chevron-right"></i> <span class="i18n" data-en="Services" data-np="सेवाहरू">Services</span></a>
+                        <a href="#reviews"><i class="fas fa-chevron-right"></i> <span class="i18n" data-en="Reviews" data-np="समीक्षाहरू">Reviews</span></a>
+                        <a href="#contact"><i class="fas fa-chevron-right"></i> <span class="i18n" data-en="Contact" data-np="सम्पर्क">Contact</span></a>
+                        <a href="#blog"><i class="fas fa-chevron-right"></i> <span class="i18n" data-en="Blog" data-np="ब्लग">Blog</span></a>
+                        <a href="#location"><i class="fas fa-chevron-right"></i> <span class="i18n" data-en="Location" data-np="स्थान">Location</span></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="i18n" data-en="Our Services" data-np="हाम्रा सेवाहरू">Our Services</h4>
+                    <div class="footer-links">
+                        <a href="computer-laptop-repair.html"><i class="fas fa-chevron-right"></i> <span class="i18n" data-en="Laptop Repair" data-np="ल्यापटप मर्मत">Laptop Repair</span></a>
+                        <a href="computer-laptop-repair.html"><i class="fas fa-chevron-right"></i> <span class="i18n" data-en="Computer Repair" data-np="कम्प्युटर मर्मत">Computer Repair</span></a>
+                        <a href="cctv-installation.html"><i class="fas fa-chevron-right"></i> <span class="i18n" data-en="CCTV Installation" data-np="सीसीटीभी स्थापना">CCTV Installation</span></a>
+                        <a href="networking-solutions.html"><i class="fas fa-chevron-right"></i> <span class="i18n" data-en="Networking" data-np="नेटवर्किङ">Networking</span></a>
+                        <a href="pc-sales-assembly.html"><i class="fas fa-chevron-right"></i> <span class="i18n" data-en="PC Sales" data-np="पिसी बिक्री">PC Sales</span></a>
+                        <a href="software-it-support.html"><i class="fas fa-chevron-right"></i> <span class="i18n" data-en="IT Support" data-np="आईटी सहयोग">IT Support</span></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="i18n" data-en="Contact Info" data-np="सम्पर्क जानकारी">Contact Info</h4>
+                    <div class="footer-contact-item"><i class="fas fa-location-dot"></i> <span class="i18n" data-en="Damak-5, Jhapa District, Nepal" data-np="दमक-५, झापा जिल्ला, नेपाल">Damak-5, Jhapa District, Nepal</span></div>
+                    <div class="footer-contact-item"><i class="fas fa-phone"></i> <span><a href="tel:9863617278">986-3617278</a></span></div>
+                    <div class="footer-contact-item"><i class="fas fa-envelope"></i> <span><a href="mailto:damakitcentre@gmail.com">damakitcentre@gmail.com</a></span></div>
+                    <div class="footer-contact-item"><i class="fas fa-clock"></i> <span class="i18n" data-en="Sun–Fri: 8AM–8PM&lt;br&gt;Sat: 9AM–6PM" data-np="आइत–शुक्र: बिहान ८–राति ८&lt;br&gt;शनि: बिहान ९–साँझ ६">Sun–Fri: 8AM–8PM<br>Sat: 9AM–6PM</span></div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; 2026 <strong class="i18n" data-en="Damak IT Centre" data-np="दमक आईटी केन्द्र">Damak IT Centre</strong> <span class="i18n" data-en="All Right reserved." data-np="सर्वाधिकार सुरक्षित।">All Right reserved.</span>
+                </div>
+                <div class="developer">
+                    <span class="i18n" data-en="Developed by" data-np="द्वारा विकसित">Developed by</span>
+                    <a href="https://sujan01.com.np/" target="_blank" rel="noopener noreferrer">Sujan Subedi</a>
+                </div>
+                <div class="footer-tags">Damak · Jhapa · Nepal &nbsp;|&nbsp; IT Service · Computer Repair · CCTV</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ── FLOATING BUTTONS ── -->
+    <div class="float-btns">
+        <a href="#home" class="float-btn top" id="topBtn" style="display:none;" title="Back to top">
+            <i class="fas fa-chevron-up arrow-up"></i> <span class="i18n" data-en="Top" data-np="माथि">Top</span>
+        </a>
+        <a href="tel:9863617278" class="float-btn phone" title="Call us">
+            <i class="fas fa-phone"></i> <span class="i18n" data-en="Call Us" data-np="फोन गर्नुहोस्">Call Us</span>
+        </a>
+        <a href="https://wa.me/9779863617278" target="_blank" rel="noopener noreferrer" class="float-btn whatsapp" title="WhatsApp" style="position:relative;">
+            <i class="fab fa-whatsapp"></i> <span>WhatsApp</span>
+        </a>
+    </div>
+
+    <!-- Toast -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i> <span id="toastMsg" class="i18n" data-en="Message sent! We'll contact you soon." data-np="सन्देश पठाइयो! हामी चाँडै सम्पर्क गर्नेछौं।">Message sent! We'll contact you soon.</span>
+    </div>
+
+    <!-- ── SCRIPTS ── -->
+    <script>
+        // ════════════════════════════════════════════════════
+        //  CLOUDINARY CONFIGURATION — EDIT THESE
+        // ════════════════════════════════════════════════════
+        const CLOUDINARY_CONFIG = {
+            cloudName: 'your-cloud-name', // ← REPLACE with your Cloudinary cloud name
+            apiKey: 'your-api-key', // ← REPLACE with your Cloudinary API key
+            apiSecret: 'your-api-secret', // ← REPLACE with your Cloudinary API secret
+            uploadPreset: 'your-unsigned-preset', // ← REPLACE with your unsigned upload preset
+            tag: 'website-gallery',
+            adminPassword: 'admin123' // ← CHANGE THIS PASSWORD
+        };
+
+        // ════════════════════════════════════════════════════
+        //  STATE
+        // ════════════════════════════════════════════════════
+        let blogPosts = [];
+        let adminVisible = false;
+        let isAdminUnlocked = false;
+
+        // ════════════════════════════════════════════════════
+        //  LANGUAGE SYSTEM
+        // ════════════════════════════════════════════════════
+        let currentLang = 'en';
+
+        function setLang(lang) {
+            currentLang = lang;
+            document.getElementById('langEN').classList.toggle('active', lang === 'en');
+            document.getElementById('langNP').classList.toggle('active', lang === 'np');
+            document.getElementById('mobileLangEN').classList.toggle('active', lang === 'en');
+            document.getElementById('mobileLangNP').classList.toggle('active', lang === 'np');
+
+            document.querySelectorAll('.i18n').forEach(el => {
+                const text = el.getAttribute('data-' + lang);
+                if (text !== null) {
+                    if (text.includes('&lt;br&gt;') || text.includes('<br>')) {
+                        el.innerHTML = text.replace(/&lt;br&gt;/g, '<br>');
+                    } else {
+                        el.textContent = text;
+                    }
+                }
+            });
+
+            document.querySelectorAll('select option.i18n').forEach(opt => {
+                const text = opt.getAttribute('data-' + lang);
+                if (text) opt.textContent = text;
+            });
+
+            document.documentElement.lang = lang === 'np' ? 'ne' : 'en';
+
+            const label = document.getElementById('adminToggleLabel');
+            if (label) {
+                const txt = lang === 'np' ? 'सामग्री व्यवस्थापन' : 'Manage Content';
+                label.textContent = adminVisible ? (lang === 'np' ? 'व्यवस्थापन लुकाउनुहोस्' : 'Hide Management') : txt;
+            }
+        }
+
+        function updateAdminLabel() {
+            const label = document.getElementById('adminToggleLabel');
+            if (label) {
+                const txt = currentLang === 'np' ? 'सामग्री व्यवस्थापन' : 'Manage Content';
+                label.textContent = adminVisible ? (currentLang === 'np' ? 'व्यवस्थापन लुकाउनुहोस्' : 'Hide Management') : txt;
+            }
+        }
+
+        // ════════════════════════════════════════════════════
+        //  CUSTOM CURSOR
+        // ════════════════════════════════════════════════════
+        const dot = document.getElementById('cursorDot');
+        const ring = document.getElementById('cursorRing');
+        let mx = 0,
+            my = 0,
+            rx = 0,
+            ry = 0;
+        document.addEventListener('mousemove', e => { mx = e.clientX;
+            my = e.clientY; });
+
+        function animateCursor() {
+            dot.style.left = mx + 'px';
+            dot.style.top = my + 'px';
+            rx += (mx - rx) * 0.12;
+            ry += (my - ry) * 0.12;
+            ring.style.left = rx + 'px';
+            ring.style.top = ry + 'px';
+            requestAnimationFrame(animateCursor);
+        }
+        animateCursor();
+        document.querySelectorAll('a,button,.service-card,.review-card,.blog-post').forEach(el => {
+            el.addEventListener('mouseenter', () => ring.classList.add('hovering'));
+            el.addEventListener('mouseleave', () => ring.classList.remove('hovering'));
+        });
+
+        // ════════════════════════════════════════════════════
+        //  NAVBAR SCROLL
+        // ════════════════════════════════════════════════════
+        const navbar = document.getElementById('navbar');
+        const topBtn = document.getElementById('topBtn');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 60);
+            topBtn.style.display = window.scrollY > 400 ? 'flex' : 'none';
+            document.querySelectorAll('section[id]').forEach(sec => {
+                const top = sec.getBoundingClientRect().top;
+                if (top <= 100 && top > -sec.offsetHeight + 100) {
+                    document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+                    const link = document.querySelector('.nav-links a[href="#' + sec.id + '"]');
+                    if (link) link.classList.add('active');
+                }
+            });
+        });
+
+        // ════════════════════════════════════════════════════
+        //  HAMBURGER
+        // ════════════════════════════════════════════════════
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileClose = document.getElementById('mobileClose');
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('open');
+            mobileMenu.classList.toggle('active');
+            document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+        });
+        mobileClose.addEventListener('click', closeMobile);
+
+        function closeMobile() {
+            hamburger.classList.remove('open');
+            mobileMenu.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // ════════════════════════════════════════════════════
+        //  SCROLL REVEAL
+        // ════════════════════════════════════════════════════
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((e, i) => {
+                if (e.isIntersecting) {
+                    setTimeout(() => e.target.classList.add('visible'), i * 80);
+                    observer.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.12 });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // ════════════════════════════════════════════════════
+        //  REVIEWS SLIDER
+        // ════════════════════════════════════════════════════
+        const track = document.getElementById('sliderTrack');
+        const cards = track.querySelectorAll('.review-card');
+        const dotsWrap = document.getElementById('sliderDots');
+        let current = 0;
+        let perView = window.innerWidth <= 768 ? 1 : 3;
+
+        function buildDots() {
+            dotsWrap.innerHTML = '';
+            const total = cards.length - perView + 1;
+            for (let i = 0; i < total; i++) {
+                const d = document.createElement('div');
+                d.className = 'slider-dot' + (i === 0 ? ' active' : '');
+                d.addEventListener('click', () => goTo(i));
+                dotsWrap.appendChild(d);
+            }
+        }
+
+        function goTo(n) {
+            const total = cards.length - perView + 1;
+            current = Math.max(0, Math.min(n, total - 1));
+            const cardW = cards[0].offsetWidth + 24;
+            track.style.transform = 'translateX(-' + (current * cardW) + 'px)';
+            dotsWrap.querySelectorAll('.slider-dot').forEach((d, i) => d.classList.toggle('active', i === current));
+        }
+        document.getElementById('prevBtn').addEventListener('click', () => goTo(current - 1));
+        document.getElementById('nextBtn').addEventListener('click', () => goTo(current + 1));
+        setInterval(() => goTo(current + 1 >= cards.length - perView + 1 ? 0 : current + 1), 4000);
+        window.addEventListener('resize', () => {
+            perView = window.innerWidth <= 768 ? 1 : 3;
+            buildDots();
+            goTo(0);
+        });
+        buildDots();
+
+        // ════════════════════════════════════════════════════
+        //  CONTACT FORM → WHATSAPP
+        // ════════════════════════════════════════════════════
+        function submitForm() {
+            const name = document.getElementById('fname').value.trim();
+            const phone = document.getElementById('fphone').value.trim();
+            const service = document.getElementById('fservice').value;
+            const msg = document.getElementById('fmsg').value.trim();
+            if (!name || !phone) {
+                const errMsg = currentLang === 'np' ? 'कृपया आफ्नो नाम र फोन नम्बर भर्नुहोस्।' :
+                    'Please fill in your name and phone number.';
+                const submitBtn = document.querySelector('.form-submit');
+                const orig = submitBtn.innerHTML;
+                submitBtn.innerHTML = '<i class="fas fa-exclamation-circle"></i> ' + errMsg;
+                submitBtn.style.background = '#dc2626';
+                setTimeout(() => { submitBtn.innerHTML = orig;
+                    submitBtn.style.background = ''; }, 3000);
+                return;
+            }
+            const text =
+                `Hello Damak IT Centre!%0A%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0AService: ${encodeURIComponent(service || 'General')}%0AMessage: ${encodeURIComponent(msg || 'I need assistance.')}`;
+            window.open(`https://wa.me/9779863617278?text=${text}`, '_blank');
+            const toastMsg = currentLang === 'np' ? 'सन्देश पठाइयो! हामी चाँडै सम्पर्क गर्नेछौं।' :
+                'Message sent! We\'ll contact you soon.';
+            showToast(toastMsg, false);
+            document.getElementById('fname').value = '';
+            document.getElementById('fphone').value = '';
+            document.getElementById('fservice').value = '';
+            document.getElementById('fmsg').value = '';
+        }
+
+        // ════════════════════════════════════════════════════
+        //  TOAST NOTIFICATION
+        // ════════════════════════════════════════════════════
+        function showToast(msg, isError = false) {
+            const toast = document.getElementById('toast');
+            const toastMsg = document.getElementById('toastMsg');
+            toastMsg.textContent = msg;
+            toast.classList.remove('error');
+            if (isError) toast.classList.add('error');
+            toast.classList.add('show');
+            setTimeout(() => toast.classList.remove('show'), 3500);
+        }
+
+        // ════════════════════════════════════════════════════
+        //  ADMIN PANEL TOGGLE
+        // ════════════════════════════════════════════════════
+        function toggleAdminPanel() {
+            const panel = document.getElementById('adminPanel');
+            const toggle = document.getElementById('adminToggle');
+            adminVisible = !adminVisible;
+            panel.classList.toggle('show', adminVisible);
+            toggle.classList.toggle('active', adminVisible);
+            const label = document.getElementById('adminToggleLabel');
+            if (adminVisible) {
+                label.textContent = currentLang === 'np' ? 'व्यवस्थापन लुकाउनुहोस्' : 'Hide Management';
+            } else {
+                label.textContent = currentLang === 'np' ? 'सामग्री व्यवस्थापन' : 'Manage Content';
+            }
+            if (adminVisible && isAdminUnlocked) {
+                document.getElementById('adminContent').style.display = 'block';
+            } else if (adminVisible) {
+                document.getElementById('adminContent').style.display = 'none';
+            }
+        }
+
+        // ════════════════════════════════════════════════════
+        //  PASSWORD VERIFICATION
+        // ════════════════════════════════════════════════════
+        function verifyPassword() {
+            const input = document.getElementById('adminPassword');
+            const status = document.getElementById('passwordStatus');
+            const entered = input.value.trim();
+
+            if (entered === CLOUDINARY_CONFIG.adminPassword) {
+                isAdminUnlocked = true;
+                status.textContent = currentLang === 'np' ? '✅ पहुँच अनुमत' : '✅ Access granted';
+                status.className = 'status success';
+                document.getElementById('adminContent').style.display = 'block';
+                showToast(currentLang === 'np' ? 'पहुँच अनुमत भयो!' : 'Access granted!', false);
+            } else {
+                isAdminUnlocked = false;
+                status.textContent = currentLang === 'np' ? '❌ गलत पासवर्ड' : '❌ Wrong password';
+                status.className = 'status error';
+                document.getElementById('adminContent').style.display = 'none';
+                showToast(currentLang === 'np' ? 'गलत पासवर्ड। फेरि प्रयास गर्नुहोस्।' : 'Wrong password. Try again.', true);
+            }
+            input.value = '';
+        }
+
+        document.getElementById('adminPassword').addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') verifyPassword();
+        });
+
+        // ════════════════════════════════════════════════════
+        //  CLOUDINARY — FETCH BLOG POSTS
+        // ════════════════════════════════════════════════════
+        async function fetchBlogPosts() {
+            const grid = document.getElementById('blogGrid');
+            const empty = document.getElementById('blogEmpty');
+
+            if (CLOUDINARY_CONFIG.cloudName === 'your-cloud-name') {
+                empty.style.display = 'block';
+                empty.querySelector('p').innerHTML =
+                    '⚠️ <strong>Cloudinary not configured.</strong> Please update the <code>CLOUDINARY_CONFIG</code> in the JavaScript section with your credentials.';
+                empty.querySelector('h3').textContent = '⚠️ कन्फिगरेसन आवश्यक';
+                return;
+            }
+
+            try {
+                const auth = btoa(`${CLOUDINARY_CONFIG.apiKey}:${CLOUDINARY_CONFIG.apiSecret}`);
+                const url =
+                    `https://api.cloudinary.com/v1_1/${CLOUDINARY_CONFIG.cloudName}/resources/tags/${CLOUDINARY_CONFIG.tag}?max_results=50`;
+
+                const response = await fetch(url, {
+                    headers: { 'Authorization': `Basic ${auth}` }
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}`);
+                }
+
+                const data = await response.json();
+                const resources = data.resources || [];
+
+                const posts = resources
+                    .filter(r => r.context && r.context.custom)
+                    .map(r => ({
+                        publicId: r.public_id,
+                        url: r.secure_url,
+                        title: r.context.custom.title || 'Untitled',
+                        description: r.context.custom.description || '',
+                        youtube: r.context.custom.youtube || '',
+                        createdAt: r.created_at || new Date().toISOString()
+                    }));
+
+                blogPosts = posts;
+                renderBlogPosts(posts);
+
+                if (posts.length === 0) {
+                    empty.style.display = 'block';
+                    empty.querySelector('p').textContent = currentLang === 'np' ?
+                        'क्लाउडिनरी मार्फत ट्यागको साथ आफ्नो पहिलो पोस्ट अपलोड गर्नुहोस्' :
+                        'Upload your first post via Cloudinary with the tag';
+                    empty.querySelector('h3').textContent = currentLang === 'np' ?
+                        'अहिलेसम्म कुनै ब्लग पोस्ट छैन' :
+                        'No blog posts yet';
+                } else {
+                    empty.style.display = 'none';
+                }
+
+                const msg = currentLang === 'np' ?
+                    `${posts.length} ब्लग पोस्टहरू लोड गरियो` :
+                    `Loaded ${posts.length} blog posts`;
+                showToast(msg, false);
+
+            } catch (err) {
+                console.error('Fetch error:', err);
+                const msg = currentLang === 'np' ?
+                    'ब्लग पोस्टहरू लोड गर्न असफल। क्लाउडिनरी क्रेडेन्सियल जाँच गर्नुहोस्।' :
+                    'Failed to load blog posts. Check Cloudinary credentials.';
+                showToast(msg, true);
+                empty.style.display = 'block';
+                empty.querySelector('p').textContent = msg;
+                empty.querySelector('h3').textContent = currentLang === 'np' ? '⚠️ त्रुटि' : '⚠️ Error';
+            }
+        }
+
+        // ════════════════════════════════════════════════════
+        //  RENDER BLOG POSTS
+        // ════════════════════════════════════════════════════
+        function renderBlogPosts(posts) {
+            const grid = document.getElementById('blogGrid');
+            const empty = document.getElementById('blogEmpty');
+            grid.querySelectorAll('.blog-post').forEach(el => el.remove());
+
+            if (posts.length === 0) {
+                empty.style.display = 'block';
+                return;
+            }
+            empty.style.display = 'none';
+
+            posts.forEach((post, index) => {
+                const card = document.createElement('div');
+                card.className = 'blog-post reveal';
+                const date = new Date(post.createdAt);
+                const dateStr = date.toLocaleDateString(currentLang === 'np' ? 'ne' : 'en-US', {
+                    year: 'numeric',
+                    month: 'short',
+                    day: 'numeric'
+                });
+
+                let videoHTML = '';
+                if (post.youtube && post.youtube.trim() !== '') {
+                    let videoId = post.youtube.trim();
+                    if (videoId.includes('youtube.com/watch?v=')) {
+                        videoId = videoId.split('v=')[1]?.split('&')[0] || videoId;
+                    } else if (videoId.includes('youtu.be/')) {
+                        videoId = videoId.split('youtu.be/')[1]?.split('?')[0] || videoId;
+                    }
+                    videoHTML = `
+                            <div class="blog-video">
+                                <iframe src="https://www.youtube.com/embed/${videoId}?controls=1&rel=0" 
+                                    allowfullscreen loading="lazy" 
+                                    title="YouTube video for ${post.title}">
+                                </iframe>
+                            </div>
+                        `;
+                }
+
+                const deleteLabel = currentLang === 'np' ? 'मेट्नुहोस्' : 'Delete';
+
+                card.innerHTML = `
+                        <img class="blog-img" src="${post.url}" alt="${post.title}" loading="lazy" />
+                        <div class="blog-body">
+                            ${videoHTML}
+                            <h3 class="blog-title">${post.title}</h3>
+                            <p class="blog-desc">${post.description || (currentLang === 'np' ? 'कुनै विवरण प्रदान गरिएको छैन।' : 'No description provided.')}</p>
+                            <div class="blog-meta">
+                                <span class="blog-date"><i class="far fa-calendar-alt"></i> ${dateStr}</span>
+                                ${isAdminUnlocked ? `
+                                <div class="blog-actions">
+                                    <button class="btn-sm btn-danger-sm" onclick="deleteBlogPost('${post.publicId}', ${index})">
+                                        <i class="fas fa-trash-alt"></i> ${deleteLabel}
+                                    </button>
+                                </div>
+                                ` : ''}
+                            </div>
+                        </div>
+                    `;
+                grid.appendChild(card);
+            });
+
+            document.querySelectorAll('.blog-post.reveal').forEach(el => {
+                observer.observe(el);
+            });
+        }
+
+        // ════════════════════════════════════════════════════
+        //  CLOUDINARY — DELETE BLOG POST
+        // ════════════════════════════════════════════════════
+        async function deleteBlogPost(publicId, index) {
+            if (!isAdminUnlocked) {
+                const msg = currentLang === 'np' ? 'कृपया पहिले पासवर्ड प्रविष्ट गर्नुहोस्।' : 'Please enter the password first.';
+                showToast(msg, true);
+                return;
+            }
+
+            const confirmMsg = currentLang === 'np' ?
+                `"${blogPosts[index]?.title || 'यो पोस्ट'}" स्थायी रूपमा मेटाउनुहोस्?` :
+                `Delete "${blogPosts[index]?.title || 'this post'}" permanently?`;
+
+            if (!confirm(confirmMsg)) return;
+
+            try {
+                const auth = btoa(`${CLOUDINARY_CONFIG.apiKey}:${CLOUDINARY_CONFIG.apiSecret}`);
+                const url =
+                    `https://api.cloudinary.com/v1_1/${CLOUDINARY_CONFIG.cloudName}/image/upload/${publicId}`;
+
+                const response = await fetch(url, {
+                    method: 'DELETE',
+                    headers: { 'Authorization': `Basic ${auth}` }
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}`);
+                }
+
+                const result = await response.json();
+                if (result.result === 'ok') {
+                    const msg = currentLang === 'np' ? 'पोस्ट सफलतापूर्वक मेटियो!' : 'Post deleted successfully!';
+                    showToast(msg, false);
+                    blogPosts.splice(index, 1);
+                    renderBlogPosts(blogPosts);
+                    if (blogPosts.length === 0) {
+                        document.getElementById('blogEmpty').style.display = 'block';
+                    }
+                } else {
+                    throw new Error(result.message || 'Delete failed');
+                }
+            } catch (err) {
+                console.error('Delete error:', err);
+                const msg = currentLang === 'np' ? 'पोस्ट मेटाउन असफल।' : 'Failed to delete post.';
+                showToast(msg, true);
+            }
+        }
+
+        // ════════════════════════════════════════════════════
+        //  CLOUDINARY — UPLOAD WIDGET
+        // ════════════════════════════════════════════════════
+        function openUploadWidget() {
+            if (!isAdminUnlocked) {
+                const msg = currentLang === 'np' ?
+                    'कृपया पहिले पासवर्ड प्रविष्ट गर्नुहोस् र व्यवस्थापन प्यानल खोल्नुहोस्।' :
+                    'Please enter the password and open the management panel first.';
+                showToast(msg, true);
+                if (!adminVisible) toggleAdminPanel();
+                document.getElementById('adminPassword').focus();
+                return;
+            }
+
+            if (typeof cloudinary === 'undefined' || !cloudinary.createUploadWidget) {
+                const msg = currentLang === 'np' ?
+                    'क्लाउडिनरी विजेट लोड भएन। इन्टरनेट जडान जाँच गर्नुहोस्।' :
+                    'Cloudinary widget not loaded. Check your internet connection.';
+                showToast(msg, true);
+                return;
+            }
+
+            const widget = cloudinary.createUploadWidget({
+                cloudName: CLOUDINARY_CONFIG.cloudName,
+                uploadPreset: CLOUDINARY_CONFIG.uploadPreset,
+                tags: [CLOUDINARY_CONFIG.tag],
+                context: {
+                    title: '',
+                    description: '',
+                    youtube: ''
+                },
+                sources: ['local', 'url', 'camera', 'dropbox', 'google_drive'],
+                multiple: false,
+                showAdvancedOptions: true,
+                showPoweredBy: false,
+                cropping: false,
+                folder: 'blog',
+                publicId: `blog_${Date.now()}`,
+                fieldName: 'file',
+                defaultSource: 'local',
+                styles: {
+                    palette: {
+                        window: '#FFFFFF',
+                        sourceBg: '#f0f4ff',
+                        windowBorder: '#e2eaff',
+                        tabIcon: '#2563eb',
+                        inactiveTabIcon: '#6b7280',
+                        menuIcons: '#2563eb',
+                        link: '#2563eb',
+                        action: '#2563eb',
+                        inProgress: '#2563eb',
+                        complete: '#16a34a',
+                        error: '#dc2626',
+                        textDark: '#0d1a3a',
+                        textLight: '#ffffff'
+                    }
+                }
+            }, (error, result) => {
+                if (error) {
+                    console.error('Upload error:', error);
+                    const msg = currentLang === 'np' ?
+                        'अपलोड असफल: ' + (error.message || 'अज्ञात त्रुटि') :
+                        'Upload failed: ' + (error.message || 'Unknown error');
+                    showToast(msg, true);
+                    return;
+                }
+                if (result && result.event === 'success') {
+                    const msg = currentLang === 'np' ?
+                        'ब्लग पोस्ट सफलतापूर्वक अपलोड भयो! ताजा गर्दै...' :
+                        'Blog post uploaded successfully! Refreshing...';
+                    showToast(msg, false);
+                    setTimeout(() => {
+                        fetchBlogPosts();
+                    }, 1500);
+                }
+            });
+            widget.open();
+        }
+
+        // ════════════════════════════════════════════════════
+        //  SMOOTH SCROLL
+        // ════════════════════════════════════════════════════
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', e => {
+                const target = document.querySelector(a.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // ════════════════════════════════════════════════════
+        //  INIT
+        // ════════════════════════════════════════════════════
+        document.addEventListener('DOMContentLoaded', () => {
+            if (CLOUDINARY_CONFIG.cloudName === 'your-cloud-name') {
+                const empty = document.getElementById('blogEmpty');
+                empty.querySelector('p').innerHTML =
+                    '⚠️ <strong>Cloudinary not configured.</strong> Please update the <code>CLOUDINARY_CONFIG</code> in the JavaScript section with your credentials.';
+                empty.querySelector('h3').textContent = '⚠️ कन्फिगरेसन आवश्यक';
+                empty.style.display = 'block';
+                console.warn('Cloudinary config not set. Please update CLOUDINARY_CONFIG.');
+            } else {
+                fetchBlogPosts();
+            }
+            updateAdminLabel();
+        });
+
+        document.querySelector('.blog-controls .btn-secondary')?.addEventListener('click', fetchBlogPosts);
+
+        const origSetLang = setLang;
+        setLang = function(lang) {
+            origSetLang(lang);
+            updateAdminLabel();
+            const status = document.getElementById('passwordStatus');
+            if (status) {
+                if (isAdminUnlocked) {
+                    status.textContent = lang === 'np' ? '✅ पहुँच अनुमत' : '✅ Access granted';
+                    status.className = 'status success';
+                } else {
+                    status.textContent = '';
+                    status.className = 'status';
+                }
+            }
+        };
+
+        console.log('🚀 Damak IT Centre — Blog powered by Cloudinary');
+        console.log('📌 Tag: website-gallery | Admin password: ' + CLOUDINARY_CONFIG.adminPassword);
+        console.log('🔒 Enter the password in the admin panel to manage content.');
+    </script>
+
+</body>
+</html>
